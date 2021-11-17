@@ -16,3 +16,9 @@ ul,
 nav {
   margin: 0em;
 }
+
+.display {
+  padding: 2em;
+  border: solid white 2px;
+  border-radius: 9px;
+}
