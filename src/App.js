@@ -16,15 +16,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Bygger views</h1>
 
         <Router>
           <div>
           <Switch>
 
-            <Route path="/start" component={Start}/>
+            <Route path="/" exact component={Start}/>
             <Route path="/futureclimate" component={FutureClimate}/>
-            <Route path="/cctopics" component={CCTopics}/>
+            <Route path="/cctopics" exact component={CCTopics}/>
             <Route path="/quizlobby" component={QuizLobby}/>
             <Route path="/quiz" component={Quiz}/>
             <Route path="/result" component={Result}/>
