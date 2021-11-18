@@ -1,10 +1,15 @@
 import React from "react";
 import "../App.css";
 
+import { Link } from 'react-router-dom';
+
 export function CCTopics() {
   return (
     <div>
-      <h2 className="display-4 display">Vy med alla ämnen</h2>
+      <h1>Klimatförändringar</h1>
+      <Link to="/quizlobby">
+        <button>Till quizet</button>
+      </Link>    
     </div>
   );
 }

@@ -1,10 +1,15 @@
 import React from "react";
 import "../App.css";
 
+import { Link } from 'react-router-dom';
+
 export function Quiz() {
   return (
     <div>
-      <h2 className="display-4 display">Eleven kan spela ett quiz</h2>
+      <h1>Quiz</h1>
+      <Link to="/result">
+        <button>Resultat</button>
+      </Link>
     </div>
   );
 }
