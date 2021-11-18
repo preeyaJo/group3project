@@ -1,10 +1,14 @@
 import React from "react";
 import "../App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
+
+
+import Button from 'react-bootstrap/Button';
 
 export function Start() {
   return (
@@ -13,8 +17,9 @@ export function Start() {
       <FontAwesomeIcon icon={faGlobeEurope}></FontAwesomeIcon>
       <p>En app av Grupp 3</p>
       <Link to="/futureclimate">
-        <button>Starta</button>
+        <Button>Starta</Button>
       </Link>
+      
     </div>
   );
 }

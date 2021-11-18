@@ -1,14 +1,17 @@
 import React from "react";
 import "../App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Link } from 'react-router-dom';
+
+import Button from 'react-bootstrap/Button';
 
 export function CCTopics() {
   return (
     <div>
       <h1>Klimatförändringar</h1>
       <Link to="/quizlobby">
-        <button>Till quizet</button>
+        <Button>Till quizet</Button>
       </Link>    
     </div>
   );
