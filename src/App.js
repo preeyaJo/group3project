@@ -1,3 +1,4 @@
+
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -9,8 +10,14 @@ import QuizLobby from "./Views/QuizLobby";
 import Quiz from "./Views/Quiz";
 import Result from "./Views/Result";
 import HighScore from "./Views/HighScore";
+import FossilFuels from "./Views/FossilFuels";
+import GlobalWarming from "./Views/GlobalWarming";
+import SeaLevels from "./Views/SeaLevels";
+import GlacierSize from "./Views/GlacierSize";
+
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -28,11 +35,15 @@ function App() {
             <Route path="/quiz" component={Quiz}/>
             <Route path="/result" component={Result}/>
             <Route path="/highscore" component={HighScore}/>
+            {/*Lagt till route för kategoriernas views*/}
+            <Route path="/fossilfuels" component={FossilFuels}/>
+            <Route path="/globalwarming" component={GlobalWarming}/>
+            <Route path="/sealevels" component={SeaLevels}/>
+            <Route path="/glaciersize" component={GlacierSize}/>
 
           </Switch>
           </div>
         </Router>
-
 
       </header>
     </div>

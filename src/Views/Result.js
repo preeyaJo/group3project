@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BottomMenu from '../Components/BottomMenu';
 
 import { Link } from 'react-router-dom';
 
@@ -9,6 +10,8 @@ import Button from 'react-bootstrap/Button';
 export function Result() {
   return (
     <div>
+      {/*Komponent för bottenmeny*/}
+      <BottomMenu/>
       <h1>Ditt resultat:</h1>
       <h2>5/10</h2>
       <Link to="/quiz">
