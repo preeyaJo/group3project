@@ -6,12 +6,13 @@ import BottomMenu from "../Components/BottomMenu";
 import { Link } from "react-router-dom";
 
 import Button from "react-bootstrap/Button";
-import QuizItem from "../Quiz/QuizItem";
+import QuizListContainer from "../Quiz/QuizListContainer";
 
 export function Quiz() {
   return (
     <div>
-      <QuizItem />s{/*Komponent för bottenmeny*/}
+      <QuizListContainer />
+      {/*Komponent för bottenmeny*/}
       <BottomMenu />
       <Link to="/result">
         <Button>Resultat</Button>
