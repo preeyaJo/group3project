@@ -12,16 +12,16 @@ import { faMountain } from "@fortawesome/free-solid-svg-icons";
 import { faDice } from "@fortawesome/free-solid-svg-icons";
 
 
-/*Komponent för bottenmeny*/
+
 function BottomMenu() {
   return (
-      <Navbar fixed="bottom" bg="light">
+      <Navbar className="BottomMenu" fixed="bottom">
     <Container>
-      <Link to="/fossilfuels"><FontAwesomeIcon icon={faIndustry} /></Link>
-      <Link to="/globalwarming"><FontAwesomeIcon icon={faTemperatureLow} /></Link>
-      <Link to="/sealevels"><FontAwesomeIcon icon={faWater} /></Link>
-      <Link to="/glaciersize"><FontAwesomeIcon icon={faMountain} /></Link>
-      <Link to="/quiz"><FontAwesomeIcon icon={faDice} /></Link>
+      <Link className="BottomNavItem" to="/fossilfuels"><FontAwesomeIcon icon={faIndustry} /></Link>
+      <Link className="BottomNavItem" to="/globalwarming"><FontAwesomeIcon icon={faTemperatureLow} /></Link>
+      <Link className="BottomNavItem" to="/sealevels"><FontAwesomeIcon icon={faWater} /></Link>
+      <Link className="BottomNavItem" to="/glaciersize"><FontAwesomeIcon icon={faMountain} /></Link>
+      <Link className="BottomNavItem"  sto="/quiz"><FontAwesomeIcon icon={faDice} /></Link>
     </Container>
   </Navbar>
 
