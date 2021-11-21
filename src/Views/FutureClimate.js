@@ -10,7 +10,7 @@ export function FutureClimate() {
   return (
     <div>
       <h1>Vår framtid</h1>
-      <Link to="/cctopics">
+      <Link to="/fossilfuels">
         <Button>Så löser vi det</Button>
       </Link>
     </div>
