@@ -16,6 +16,7 @@ export function Start() {
       <h1>Lär för framtiden</h1>
       <FontAwesomeIcon icon={faGlobeEurope}></FontAwesomeIcon>
       <p>En app av Grupp 3</p>
+      <p>test</p>
       <Link to="/futureclimate">
         <Button>Starta</Button>
       </Link>
