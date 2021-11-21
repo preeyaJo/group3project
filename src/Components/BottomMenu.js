@@ -27,7 +27,7 @@ function BottomMenu() {
         <Link className="BottomNavItem" to="/glaciersize">
           <FontAwesomeIcon icon={faMountain} />
         </Link>
-        <Link className="BottomNavItem" to="/quiz">
+        <Link className="BottomNavItem" to="/quizLobby">
           <FontAwesomeIcon icon={faDice} />
         </Link>
       </Container>
