@@ -23,3 +23,38 @@
 .BottomNavItem:hover {
   color: #e1e6dd;
 }
+
+.startHeader{
+  color: #716595;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.startLogga{
+  color: #184E77;
+  font-size: 10em;
+  margin: 20px;
+}
+
+.loginForm{
+  color:#707070;
+  text-align: left;
+  font-size: 14px;
+}
+
+.startButton{
+  background-color: #716595 !important;
+  font-weight: bold !important;
+  padding-top: 10em;
+  border: #5A5077 !important;
+  padding-left: 2em !important;
+  padding-right: 2em !important;
+}
+
+.group3{
+  color:#707070;
+}
+
+.groupNames3{
+  font-size: 14px;
+}
