@@ -1,13 +1,13 @@
 import React from "react";
-import PostData from "./questions.json";
+import data from "./questions.json";
 
 function QuizList() {
-  return PostData.map((post, index) => (
-    <div className="bg-secondary rounded m-3 p-3" key={index}>
-      <h2 className="">
-        Fråga {index} om {post.name}
-      </h2>
-      <p>Lorem ipsum dolor sit.</p>
+  return data.map((post, index) => (
+    <div className="QuizItem rounded m-3 p-2" key={index}>
+      <h2>Fråga {index + 1}</h2>
+      <p>{post.alt1}</p>
+      <p>{post.alt2}</p>
+      <p>{post.alt3}</p>
     </div>
   ));
 }

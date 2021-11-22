@@ -12,7 +12,7 @@ import GlobalHeader from "../Components/GlobalHeader";
 export function Quiz() {
   return (
     <div>
-      <GlobalHeader/>
+      <GlobalHeader />
       <QuizListContainer />
       {/*Komponent för bottenmeny*/}
       <BottomMenu />

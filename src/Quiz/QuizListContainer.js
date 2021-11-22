@@ -3,7 +3,7 @@ import QuizList from "./QuizItem";
 
 function QuizListContainer() {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <QuizList />
     </div>
   );

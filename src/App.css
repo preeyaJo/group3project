@@ -3,23 +3,23 @@
 }
 
 .App-header {
-  background-color: #E1E6DD;
+  padding: 70px 0px;
+  background-color: #e1e6dd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 .BottomMenu {
-  background-color: #184E77;
+  background-color: #184e77;
 }
 
 .BottomNavItem {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .BottomNavItem:hover {
-  color: #E1E6DD;
+  color: #e1e6dd;
 }

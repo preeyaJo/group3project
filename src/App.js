@@ -1,7 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import "./App.css";
+import "./Quiz/quiz.css";
 import Start from "./Views/Start";
 import FutureClimate from "./Views/FutureClimate";
 import QuizLobby from "./Views/QuizLobby";
@@ -13,7 +13,6 @@ import GlobalWarming from "./Views/GlobalWarming";
 import SeaLevels from "./Views/SeaLevels";
 import GlacierSize from "./Views/GlacierSize";
 import Info from "./Views/Info";
-
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 

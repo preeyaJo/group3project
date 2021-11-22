@@ -1,42 +1,51 @@
 [
   {
-    "image": "https://media.istockphoto.com/photos/downtown-cleveland-hotel-entrance-and-waiting-taxi-cab-picture-id472899538?b=1&k=20&m=472899538&s=170667a&w=0&h=oGDM26vWKgcKA3ARp2da-H4St2dMEhJg23TTBeJgPDE=",
-    "name": " Hotel Grand ",
-    "price": "fr 1275:-",
-    "description": "Det perfekta sättet att njuta av solen på Palma. Välkommen till Palma Grand Hotel – ett trevligt alternativ med dagliga aktiviteter och utflykter.",
-    "geo": "Magaluf, Mallorca",
-    "date": "1e dec - 16 dec",
-    "available": "1 rum lediga",
-    "rating": "1"
+    "id": "1",
+    "question": "fråga 1",
+    "alt1": "Alternativ: 1.1 ",
+    "alt2": "Alternativ: 1.2",
+    "alt3": "Alternativ: 1.3"
   },
   {
-    "image": "https://media.istockphoto.com/photos/downtown-cleveland-hotel-entrance-and-waiting-taxi-cab-picture-id472899538?b=1&k=20&m=472899538&s=170667a&w=0&h=oGDM26vWKgcKA3ARp2da-H4St2dMEhJg23TTBeJgPDE=",
-    "name": "Palma Hotel",
-    "price": "fr 1275:-",
-    "description": "Det perfekta sättet att njuta av solen på Palma. Välkommen till Palma Grand Hotel – ett trevligt alternativ med dagliga aktiviteter och utflykter.",
-    "geo": "Magaluf, Mallorca",
-    "date": "1e dec - 16 dec",
-    "available": "1 rum lediga",
-    "rating": "1"
+    "id": "1",
+    "question": "fråga 1",
+    "alt1": "Alternativ: 1.1 ",
+    "alt2": "Alternativ: 1.2",
+    "alt3": "Alternativ: 1.3"
   },
   {
-    "image": "https://media.istockphoto.com/photos/downtown-cleveland-hotel-entrance-and-waiting-taxi-cab-picture-id472899538?b=1&k=20&m=472899538&s=170667a&w=0&h=oGDM26vWKgcKA3ARp2da-H4St2dMEhJg23TTBeJgPDE=",
-    "name": "Grand Hotel",
-    "price": "fr 1275:-",
-    "description": "Det perfekta sättet att njuta av solen på Palma. Välkommen till Palma Grand Hotel – ett trevligt alternativ med dagliga aktiviteter och utflykter.",
-    "geo": "Magaluf, Mallorca",
-    "date": "1e dec - 16 dec",
-    "available": "1 rum lediga",
-    "rating": "1"
+    "id": "3",
+    "question": "fråga 3",
+    "alt1": "Alternativ: 3.1 ",
+    "alt2": "Alternativ: 3.2",
+    "alt3": "Alternativ: 3.3"
   },
   {
-    "image": "https://media.istockphoto.com/photos/downtown-cleveland-hotel-entrance-and-waiting-taxi-cab-picture-id472899538?b=1&k=20&m=472899538&s=170667a&w=0&h=oGDM26vWKgcKA3ARp2da-H4St2dMEhJg23TTBeJgPDE=",
-    "name": "Palma Grand Hotel",
-    "price": "fr 2275:-",
-    "description": "Det perfekta sättet att njuta av solen på Palma. Välkommen till Palma Grand Hotel – ett trevligt alternativ med dagliga aktiviteter och utflykter.",
-    "geo": "Magaluf, Mallorca",
-    "date": "2e dec - 16 dec",
-    "available": "2 rum lediga",
-    "rating": "2"
+    "id": "4",
+    "question": "fråga 4",
+    "alt1": "Alternativ: 4.1 ",
+    "alt2": "Alternativ: 4.2",
+    "alt3": "Alternativ: 4.3"
+  },
+  {
+    "id": "5",
+    "question": "fråga 5",
+    "alt1": "Alternativ: 5.1 ",
+    "alt2": "Alternativ: 5.2",
+    "alt3": "Alternativ: 5.3"
+  },
+  {
+    "id": "6",
+    "question": "fråga 6",
+    "alt1": "Alternativ: 6.1 ",
+    "alt2": "Alternativ: 6.2",
+    "alt3": "Alternativ: 6.3"
+  },
+  {
+    "id": "7",
+    "question": "fråga 7",
+    "alt1": "Alternativ: 7.1 ",
+    "alt2": "Alternativ: 7.2 ",
+    "alt3": "Alternativ: 7.3 "
   }
 ]
