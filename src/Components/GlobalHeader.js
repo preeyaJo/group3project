@@ -6,19 +6,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleLeft, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 
 function GlobalHeader() {
+const history = useHistory();
   return (
+    
     <Navbar className="BottomMenu" fixed="top">
       <Container>
       <Router>
-        <Link className="BottomNavItem" to="/futureclimate" >
-            <FontAwesomeIcon icon={faArrowCircleLeft} />
-        </Link>
+        {/* Tillbakaknapp till tidigare view. */}
+        <FontAwesomeIcon onClick={() => history.goBack()} icon={faArrowCircleLeft}></FontAwesomeIcon>
         
         <div>
           <Switch>
