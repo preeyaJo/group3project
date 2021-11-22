@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "question": "fråga 1",
+    "alt1": "Alternativ: 1.1 ",
+    "alt2": "Alternativ: 1.2",
+    "alt3": "Alternativ: 1.3"
+  },
+  {
+    "id": "1",
+    "question": "fråga 1",
+    "alt1": "Alternativ: 1.1 ",
+    "alt2": "Alternativ: 1.2",
+    "alt3": "Alternativ: 1.3"
+  },
+  {
+    "id": "3",
+    "question": "fråga 3",
+    "alt1": "Alternativ: 3.1 ",
+    "alt2": "Alternativ: 3.2",
+    "alt3": "Alternativ: 3.3"
+  },
+  {
+    "id": "4",
+    "question": "fråga 4",
+    "alt1": "Alternativ: 4.1 ",
+    "alt2": "Alternativ: 4.2",
+    "alt3": "Alternativ: 4.3"
+  },
+  {
+    "id": "5",
+    "question": "fråga 5",
+    "alt1": "Alternativ: 5.1 ",
+    "alt2": "Alternativ: 5.2",
+    "alt3": "Alternativ: 5.3"
+  },
+  {
+    "id": "6",
+    "question": "fråga 6",
+    "alt1": "Alternativ: 6.1 ",
+    "alt2": "Alternativ: 6.2",
+    "alt3": "Alternativ: 6.3"
+  },
+  {
+    "id": "7",
+    "question": "fråga 7",
+    "alt1": "Alternativ: 7.1 ",
+    "alt2": "Alternativ: 7.2 ",
+    "alt3": "Alternativ: 7.3 "
+  }
+]
