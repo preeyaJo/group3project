@@ -6,24 +6,19 @@ import data from "./questions.json";
 function QuizList() {
   return data.map((post, index) => (
     <div className=" row QuizItem rounded p-1 m-2" key={index}>
+      <h2>Fråga {post.id}</h2>
       <div className="col">
-        <h2>Fråga {post.id}</h2>
         <p>{post.question}</p>
       </div>
-      <div className="col col-md-8 d-flex justify-content-center align-items-center">
+      <div className="col col-md-8 d-flex justify-content-center ">
         <div>
-          {/*           <Button variant="outline-light btn-sm" className="m-2">
-            Alternativ 1
-          </Button>
-          <Button variant="outline-light btn-sm" className="m-2">
-            Alternativ 2
-          </Button>
-          <Button variant="outline-light btn-sm" className="m-2">
-            Alternativ 3
-          </Button>
-          <Button variant="outline-light btn-sm" className="m-2">
-            Alternativ 3
-          </Button> */}
+          {post.answers.map((a) => (
+            <div>
+              <p>{a.alt1}</p>
+              <p>{a.alt2}</p>
+              <p>{a.alt3}</p>
+            </div>
+          ))}
         </div>
 
         {/*         <InputGroup className="mb-3">
