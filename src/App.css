@@ -34,3 +34,7 @@
 .BottomNavItem:hover {
   color: #e1e6dd;
 }
+
+.active {
+  border-bottom: 3px solid white;
+}
