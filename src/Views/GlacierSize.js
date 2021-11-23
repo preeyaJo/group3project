@@ -6,7 +6,7 @@ import GlobalHeader from "../Components/GlobalHeader";
 
 
 export function GlacierSize() {
-  return (  
+  return (
     <div>
       <GlobalHeader/>
         {/*Komponent för bottenmeny*/}

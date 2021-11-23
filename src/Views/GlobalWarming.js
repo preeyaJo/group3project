@@ -6,7 +6,7 @@ import GlobalHeader from "../Components/GlobalHeader";
 
 
 export function GlobalWarming() {
-  return (  
+  return (
     <div>
       <GlobalHeader/>
         {/*Komponent för bottenmeny*/}

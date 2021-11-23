@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BottomMenu from '../Components/BottomMenu';
+import BottomMenu from '../Components/BottomMenu'
 
 import { Link } from 'react-router-dom';
 

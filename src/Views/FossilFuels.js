@@ -5,7 +5,7 @@ import BottomMenu from '../Components/BottomMenu';
 import GlobalHeader from "../Components/GlobalHeader";
 
 export function FossilFuels() {
-  return (  
+  return (
     <div>
       <GlobalHeader/>
       <BottomMenu/> 

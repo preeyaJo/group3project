@@ -6,11 +6,11 @@ import GlobalHeader from "../Components/GlobalHeader";
 
 
 export function SeaLevels() {
-  return (  
+  return (
     <div>
       <GlobalHeader/>
       <BottomMenu/>
-       
+     
     </div>
   );
 }
