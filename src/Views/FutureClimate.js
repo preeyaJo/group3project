@@ -8,18 +8,19 @@ import { faArrowCircleRight, faLongArrowAltDown} from "@fortawesome/free-solid-s
 
 import { Link } from 'react-router-dom';
 
-import Button from 'react-bootstrap/Button';
 import FutureListItems from "../Components/FutureListItems";
 
 export function FutureClimate() {
   return (
     <div>
-      <Navbar className="BottomMenu" fixed="top">
+      <Navbar className="BottomMenu" fixed="top"> {/*Toppmeny*/}
             <h1 className="text-center">Vår framtid <FontAwesomeIcon icon={faLongArrowAltDown}></FontAwesomeIcon></h1>
             </Navbar>
-      <FutureListItems/>
-      <Navbar className="BottomMenu" fixed="bottom">
-      <Link className="button-to-cctopics" to="/fossilfuels">
+            
+      <FutureListItems/>{/*Timeline*/}
+
+      <Navbar className="BottomMenu" fixed="bottom"> {/*Bottenmeny*/}
+      <Link className="button-to-cctopics" to="/fossilfuels"> {/*Knapp til CCTopics*/}
         <a>Så löser vi det  <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon></a>
       </Link>
             </Navbar>
