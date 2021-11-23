@@ -1,25 +1,25 @@
 import React from "react";
 /* import { InputGroup, FormControl } from "react-bootstrap"; */
 import { Button } from "react-bootstrap";
-import data from "./questions.json";
+import data from "./questions_a.json";
 
-function QuizList() {
+function QuizList_a() {
   return data.map((post, index) => (
-    <div className=" row QuizItem rounded p-1 m-2" key={index}>
+    <div className=" row QuizItem rounded p-4 m-2" key={index}>
       <h2>Fråga {post.id}</h2>
       <div className="col">
         <p>{post.question}</p>
       </div>
-      <div className="col col-md-8 d-flex justify-content-center ">
-        <div>
-          {post.answers.map((a) => (
-            <div>
-              <p>{a.alt1}</p>
-              <p>{a.alt2}</p>
-              <p>{a.alt3}</p>
-            </div>
-          ))}
-        </div>
+      <div className="col-4 col-md-5 d-flex flex-column justify-content-center align-items-center">
+        <Button variant="outline-light" className="m-1">
+          {post.alt1}
+        </Button>
+        <Button variant="outline-light" className="m-1">
+          {post.alt2}
+        </Button>
+        <Button variant="outline-light" className="m-1">
+          {post.alt3}
+        </Button>
 
         {/*         <InputGroup className="mb-3">
                     <Button variant="outline-light">Alt 1</Button>
@@ -31,4 +31,4 @@ function QuizList() {
   ));
 }
 
-export default QuizList;
+export default QuizList_a;
