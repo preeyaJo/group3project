@@ -4,31 +4,95 @@ h1 {
     margin: 0 auto;
 }
 
-/*Storlek ch gradient på bilder i timeline*/
-  img {
-    width: 100%;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
-  }
-
   /*Knapp till CCTopic och dess hover*/
   .button-to-cctopics {
-      margin: 0 auto;
-      color: #FFFFFF;
-      text-decoration: none !important;
-  }
-
-  .button-to-cctopics:hover {
     margin: 0 auto;
-    color: #e1e6dd;
+    color: #FFFFFF;
     text-decoration: none !important;
 }
 
-/*Style på body och html*/
-  html, body {
-    height: 100%;
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+.button-to-cctopics:hover {
+  margin: 0 auto;
+  color: #e1e6dd;
+  text-decoration: none !important;
 }
+
+/*Style på body och html*/
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  }
+
+  .timeline-text-top {
+    position: absolute;
+    top: 10%;
+    left: 40px;
+    text-align: left;
+    font-size: 1.6em;
+    
+  }
+  
+  .timeline-text-center {
+    position: absolute;
+    bottom: 45%;
+    left: 0;
+    padding: 50px;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Gamla timeline. Kan tas bort när vi bestämt oss. ----------------------------------------------------------------
+
+/*Storlek ch gradient på bilder i timeline*/
+  .img {
+    width: 100%;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  }
 
 /*Style på containern runt timeline*/
 .timeline-container {
@@ -217,3 +281,4 @@ h1 {
   }
   
 }
+

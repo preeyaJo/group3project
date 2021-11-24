@@ -41,8 +41,23 @@ const futureListArray=[
 	},
 	]
 
-/*Funktion för att skriva ut timeline*/
-function FutureListItems() {
+
+	function FutureListItems() {
+		return (
+	  
+		  futureListArray.map(futurelist=>(
+			  <section>
+			  <img src={futurelist.image} alt="Hands holding earth"/>
+				  <h2 className="timeline-text-top" >{futurelist.year}</h2>
+			  		<p className="timeline-text-center">{futurelist.description}</p>		  
+			  </section>
+		  ))
+			
+		);
+	  }
+
+/*Funktion för att skriva ut timeline - GAMLA*/
+{/*function FutureListItems() {
   return (
 
 	futureListArray.map(futurelist=>(
@@ -61,7 +76,7 @@ function FutureListItems() {
 	))
       
   );
-}
+} */}
 
 {/* Om vi vill få timeline perfekt till skärm sparar jag koden jag hade först :)
 <div>
