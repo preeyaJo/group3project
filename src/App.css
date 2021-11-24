@@ -2,24 +2,75 @@
   text-align: center;
 }
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
 .App-header {
-  background-color: #E1E6DD;
+  padding: 70px 0px;
+  background-color: #e1e6dd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: white;
 }
 .BottomMenu {
-  background-color: #184E77;
+  background-color: #184e77;
 }
 
 .BottomNavItem {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .BottomNavItem:hover {
-  color: #E1E6DD;
+  color: #e1e6dd;
+}
+
+.active {
+  border-bottom: 3px solid white;
+}
+
+.startHeader{
+  color: #716595;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.startLogga{
+  color: #184E77;
+  font-size: 7em;
+  margin: 15px;
+}
+
+.loginForm{
+  color:#707070;
+  text-align: left;
+  font-size: 14px;
+}
+
+.startButton{
+  background-color: #716595 !important;
+  font-weight: bold !important;
+  padding-top: 10em;
+  border: #5A5077 !important;
+  padding-left: 2em !important;
+  padding-right: 2em !important;
+}
+
+.group3{
+  color:#707070;
+}
+
+.groupNames3{
+  font-size: 14px;
+
 }

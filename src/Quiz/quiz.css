@@ -1,0 +1,10 @@
+.QuizItem {
+  background-color: #184e77;
+  text-align: left;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

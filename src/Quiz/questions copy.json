@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "question": "Detta är fråga 1",
+    "Answers": [
+      { "Alt1 ": "Alternativ: 1.2", "isCorrect": false },
+      { "Alt2": "Alternativ: 1.2", "isCorrect": false },
+      { "Alt3": "Alternativ: 1.3", "isCorrect": false }
+    ]
+  },
+  {
+    "id": "2",
+    "question": "fråga 2",
+    "alt1": "Alternativ: 2.1 ",
+    "alt2": "Alternativ: 2.2",
+    "alt3": "Alternativ: 2.3",
+    "Anser": "1"
+  },
+  {
+    "id": "3",
+    "question": "fråga 3",
+    "alt1": "Alternativ: 3.1 ",
+    "alt2": "Alternativ: 3.2",
+    "alt3": "Alternativ: 3.3",
+    "Anser": "2"
+  }
+]

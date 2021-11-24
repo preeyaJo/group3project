@@ -2,7 +2,7 @@ import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIndustry } from "@fortawesome/free-solid-svg-icons";
@@ -11,25 +11,26 @@ import { faWater } from "@fortawesome/free-solid-svg-icons";
 import { faMountain } from "@fortawesome/free-solid-svg-icons";
 import { faDice } from "@fortawesome/free-solid-svg-icons";
 
+
 function BottomMenu() {
   return (
     <Navbar className="BottomMenu" fixed="bottom">
       <Container>
-        <Link className="BottomNavItem" to="/fossilfuels">
+        <NavLink activeClassName="active" className="BottomNavItem" to="/fossilfuels">
           <FontAwesomeIcon icon={faIndustry} />
-        </Link>
-        <Link className="BottomNavItem" to="/globalwarming">
+        </NavLink>
+        <NavLink activeClassName="active" className="BottomNavItem" to="/globalwarming">
           <FontAwesomeIcon icon={faTemperatureLow} />
-        </Link>
-        <Link className="BottomNavItem" to="/sealevels">
+        </NavLink>
+        <NavLink activeClassName="active" className="BottomNavItem" to="/sealevels">
           <FontAwesomeIcon icon={faWater} />
-        </Link>
-        <Link className="BottomNavItem" to="/glaciersize">
+        </NavLink>
+        <NavLink activeClassName="active" className="BottomNavItem" to="/glaciersize">
           <FontAwesomeIcon icon={faMountain} />
-        </Link>
-        <Link className="BottomNavItem" to="/quiz">
+        </NavLink>
+        <NavLink activeClassName="active" className="BottomNavItem" to="/quizLobby">
           <FontAwesomeIcon icon={faDice} />
-        </Link>
+        </NavLink>
       </Container>
     </Navbar>
   );

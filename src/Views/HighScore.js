@@ -5,11 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 
 import Button from 'react-bootstrap/Button';
+import GlobalHeader from "../Components/GlobalHeader";
+import BottomMenu from "../Components/BottomMenu";
 
 export function HighScore() {
   return (
     <div>
-      <h1>Highscore:</h1>
+      <GlobalHeader/>
+      <BottomMenu/>
       <Link to="/quiz">
         <Button>Spela quizet</Button>
       </Link>
