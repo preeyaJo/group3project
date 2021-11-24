@@ -11,6 +11,7 @@ export function Info() {
 
       <h1>Info om appen</h1>
       <h2>Bla bla bla</h2>
+      <p>bla bla bla</p>
     </div>
   );
 }
