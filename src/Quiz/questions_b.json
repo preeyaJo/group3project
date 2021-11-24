@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "question": "Detta är fråga 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum perspiciatis tempora quo?",
+<<<<<<< HEAD:src/Quiz/questions_b.json
+    "answer": "Alternativ: 1.2",
+    "options": ["Alternativ: 1.1", "Alternativ: 1.2", "Alternativ: 1.3"]
+=======
+    "answers": [
+      { "alt1": "Alternativ: 1.2" },
+      { "alt2": "Alternativ: 1.2" },
+      { "alt3": "Alternativ: 1.3" }
+    ]
+>>>>>>> parent of c2e16da (fixar med quiz_b #15 from preeyaJo/Christian):src/Quiz/questions.json
+  },
+  {
+    "id": "2",
+    "question": "Detta är fråga 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum perspiciatis tempora quo?",
+<<<<<<< HEAD:src/Quiz/questions_b.json
+    "answer": "Alternativ: 2.2",
+    "options": ["Alternativ: 2.1", "Alternativ: 2.2", "Alternativ: 2.3"]
+=======
+    "answers": [
+      { "alt1": "Alternativ: 2.2" },
+      { "alt2": "Alternativ: 2.2" },
+      { "alt3": "Alternativ: 2.3" }
+    ]
+>>>>>>> parent of c2e16da (fixar med quiz_b #15 from preeyaJo/Christian):src/Quiz/questions.json
+  },
+  {
+    "id": "3",
+    "question": "Detta är fråga 3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum perspiciatis tempora quo?",
+<<<<<<< HEAD:src/Quiz/questions_b.json
+    "answer": "Alternativ: 3.2",
+    "options": ["Alternativ: 3.1", "Alternativ: 3.2", "Alternativ: 3.3"]
+=======
+    "answers": [
+      { "alt1": "Alternativ: 3.2" },
+      { "alt2": "Alternativ: 3.2" },
+      { "alt3": "Alternativ: 3.3" }
+    ]
+>>>>>>> parent of c2e16da (fixar med quiz_b #15 from preeyaJo/Christian):src/Quiz/questions.json
+  }
+]
