@@ -20,12 +20,6 @@ function QuizList_a() {
         <Button variant="outline-light" className="m-1">
           {post.alt3}
         </Button>
-
-        {/*         <InputGroup className="mb-3">
-                    <Button variant="outline-light">Alt 1</Button>
-                    <Button variant="outline-light">Alt 2</Button>
-                    <Button variant="outline-light">Alt 3</Button>
-                  </InputGroup> */}
       </div>
     </div>
   ));

@@ -19,7 +19,6 @@ export class QuizList_b extends Component {
     return (
       <div>
         <p>Quiz b</p>
-        <p>Tester för Linda</p>
       </div>
     );
   }
