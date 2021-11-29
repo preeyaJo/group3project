@@ -11,7 +11,7 @@ import GlobalHeader from "../Components/GlobalHeader";
 
 export function Quiz() {
   return (
-    <div>
+    <div className="py-5">
       <GlobalHeader />
       <QuizListContainer />
       {/*Komponent för bottenmeny*/}

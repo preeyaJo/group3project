@@ -5,7 +5,7 @@ import data from "./questions_a.json";
 
 function QuizList_a() {
   return data.map((post, index) => (
-    <div className=" row QuizItem rounded p-4 m-2" key={index}>
+    <div className=" row QuizItem rounded p-4 mx-1 my-2" key={index}>
       <h2>Fråga {post.id}</h2>
       <div className="col">
         <p>{post.question}</p>
