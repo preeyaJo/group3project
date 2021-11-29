@@ -21,7 +21,7 @@ export function FutureClimate() {
 
       <Navbar className="BottomMenu" fixed="bottom"> {/*Bottenmeny*/}
       <Link className="button-to-cctopics" to="/fossilfuels"> {/*Knapp til CCTopics*/}
-        <a>Så löser vi det  <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon></a>
+        Så löser vi det  <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon>
       </Link>
             </Navbar>
     </div>

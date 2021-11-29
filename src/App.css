@@ -26,34 +26,33 @@
 
 .BottomMenu {
   background-color: #184e77;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 10px 0px 10px;
   }
 
 .BottomNavItem {
   color: #ffffff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .bottom-dice {
-  font-size: 1.8em;
+  font-size: 1.5em;
   border-radius: 8px;
   border: 1.5px solid #c8c8c8;
-  padding: 10px !important ;
+  padding: 5px !important ;
 }
 
 
-@media only screen and (min-width: 300px) {
-
+@media only screen and (min-width: 200px) {
  
   
 .BottomNavItem {
   color: #ffffff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .BottomMenu {
   background-color: #184e77;
-  padding: 0px 20px 0px 20px;
+  padding: 10px 0px 10px 0px;
   }
 
 }
