@@ -52,7 +52,7 @@ const futureListArray = [
 function FutureListItems() {
   return futureListArray.map((futurelist) => (
     <section>
-      <img src={futurelist.image} alt="Hands holding earth" />
+      <img src={futurelist.image} alt="" />
       <h2 className="timeline-text-top">{futurelist.year}</h2>
       <p className="timeline-text-center">{futurelist.description}</p>
     </section>
