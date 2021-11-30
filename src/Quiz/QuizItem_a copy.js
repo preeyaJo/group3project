@@ -6,21 +6,23 @@ import data from "./questions_a.json";
 function QuizList_a() {
   const nrOfQuestions = data.length;
 
-  return (
-    <div className="QuizItem rounded p-4 mx-1 my-2">
-      <h2>Fråga 1 av {nrOfQuestions}</h2>
-      <div className="py-3">
-        <p>{data[0].questionText}</p>
+  return data.map((post, index) => (
+    <div className=" row QuizItem rounded p-4 mx-1 my-2" key={index}>
+      <h2>
+        Fråga {index + 1} av {nrOfQuestions}
+      </h2>
+      <div className="col">
+        <p>{post.questionText}</p>
       </div>
-      <div className="d-flex flex-column justify-content-center ">
-        {data[0].answerOptions.map((answerOption, index) => (
-          <Button variant="outline-light" className="m-1" key={index}>
+      <div className="col-4 col-md-5 d-flex flex-column justify-content-center ">
+        {post.answerOptions.map((answerOption) => (
+          <Button variant="outline-light" className="m-1">
             {answerOption.answerText}
           </Button>
         ))}
       </div>
     </div>
-  );
+  ));
 }
 
 export default QuizList_a;
