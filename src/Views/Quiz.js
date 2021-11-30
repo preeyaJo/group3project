@@ -6,14 +6,14 @@ import BottomMenu from "../Components/BottomMenu";
 import { Link } from "react-router-dom";
 
 import Button from "react-bootstrap/Button";
-import QuizListContainer from "../Quiz/QuizListContainer";
 import GlobalHeader from "../Components/GlobalHeader";
+import QuizList_a from "../Quiz/QuizItem_a";
 
 export function Quiz() {
   return (
-    <div className="py-5">
+    <div className="container">
       <GlobalHeader />
-      <QuizListContainer />
+      <QuizList_a />
       {/*Komponent för bottenmeny*/}
       <BottomMenu />
       <Link to="/result">
