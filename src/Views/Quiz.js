@@ -11,13 +11,13 @@ import GlobalHeader from "../Components/GlobalHeader";
 
 export function Quiz() {
   return (
-    <div>
+    <div className="py-5">
       <GlobalHeader />
       <QuizListContainer />
       {/*Komponent för bottenmeny*/}
       <BottomMenu />
       <Link to="/result">
-        <Button>Resultat</Button>
+        <Button className="m-3">Resultat</Button>
       </Link>
     </div>
   );

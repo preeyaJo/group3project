@@ -10,12 +10,16 @@ import { faTemperatureLow } from "@fortawesome/free-solid-svg-icons";
 import { faWater } from "@fortawesome/free-solid-svg-icons";
 import { faMountain } from "@fortawesome/free-solid-svg-icons";
 import { faDice } from "@fortawesome/free-solid-svg-icons";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 
 function BottomMenu() {
   return (
     <Navbar className="BottomMenu" fixed="bottom">
       <Container>
+      <NavLink activeClassName="active" className="BottomNavItem bottommenu-globe" to="/futureclimate">
+          <FontAwesomeIcon icon={faHome} />
+        </NavLink>
         <NavLink activeClassName="active" className="BottomNavItem" to="/fossilfuels">
           <FontAwesomeIcon icon={faIndustry} />
         </NavLink>
@@ -28,7 +32,7 @@ function BottomMenu() {
         <NavLink activeClassName="active" className="BottomNavItem" to="/glaciersize">
           <FontAwesomeIcon icon={faMountain} />
         </NavLink>
-        <NavLink activeClassName="active" className="BottomNavItem" to="/quizLobby">
+        <NavLink activeClassName="active-dice" className="BottomNavItem bottom-dice" to="/quizLobby">
           <FontAwesomeIcon icon={faDice} />
         </NavLink>
       </Container>

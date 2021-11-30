@@ -23,12 +23,45 @@
   font-size: calc(8px + 2vmin);
   color: white;
 }
+
 .BottomMenu {
   background-color: #184e77;
-}
+  padding: 0px 10px 0px 10px;
+  }
 
 .BottomNavItem {
   color: #ffffff;
+  padding: 10px;
+}
+
+.bottom-dice {
+  font-size: 1.5em;
+  border-radius: 8px;
+  border: 1.5px solid #c8c8c8;
+  padding: 5px !important ;
+}
+
+
+@media only screen and (min-width: 200px) {
+ 
+  
+.BottomNavItem {
+  color: #ffffff;
+  padding: 10px;
+}
+
+.BottomMenu {
+  background-color: #184e77;
+  padding: 10px 0px 10px 0px;
+  }
+
+}
+
+
+@media only screen and (min-width: 700px) {
+} 
+.bottommenu-globe {
+  font-size: 1.3em;
 }
 
 .BottomNavItem:hover {
@@ -38,6 +71,12 @@
 .active {
   border-bottom: 3px solid white;
 }
+
+.active-dice {
+  border: 1.5px solid #e1e6dd;
+  color: #e1e6dd;
+}
+
 
 .startHeader{
   color: #716595;
