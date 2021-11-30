@@ -8,6 +8,18 @@ function QuizList_a() {
   const [currentQuestion, setCurrentQuestion] = useState(0); //räknare som börjar på 0
   const [score, setScore] = useState(0); //räknare som börjar på 0
 
+  // innehållet läggs i en false/true-logik
+  // {false ? (visas om true) : (visas om false)}
+  // false byts ut mot state showScore
+  const [showScore, setShowScore] = useState(false);
+
+  //återställer alla state till första värdet med onClick på knappen i showScore===true
+  const resetQuiz = () => {
+    setShowScore(false);
+    setScore(0);
+    setCurrentQuestion(0);
+  };
+
   // Varje gång vi klickar på en knapp
   const handleButtonClick = (isCorrect) => {
     // om questions.answerOption.isCorrect är true så ökar vi state sccore med +1
@@ -31,12 +43,6 @@ function QuizList_a() {
     }
   };
 
-  // innehållet läggs i en false/true-logik
-  // {false ? (visas om true) : (visas om false)}
-  // false byts ut mot state showScore
-
-  const [showScore, setShowScore] = useState(false);
-
   return (
     <div>
       {showScore ? (
@@ -44,6 +50,9 @@ function QuizList_a() {
           <h2>
             Du fick {score} av {nrOfQuestions} rätt
           </h2>
+          <Button onClick={resetQuiz} variant="outline-light" className="my-2">
+            Spela igen
+          </Button>
         </div>
       ) : (
         <div className="QuizItem rounded p-4">

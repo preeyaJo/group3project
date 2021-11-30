@@ -1,7 +1,7 @@
 .QuizItem {
   background-color: #184e77;
   text-align: left;
-  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 0px 30px rgba(0, 0, 50, 0.3), 0 0 40px rgba(0, 0, 0, 0.2) inset;
 }
 
 .score-card {
