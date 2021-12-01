@@ -5,16 +5,23 @@
       { "answerText": "New York", "isCorrect": false },
       { "answerText": "London", "isCorrect": false },
       { "answerText": "Paris", "isCorrect": true },
-      { "answerText": "Dublin", "isCorrect": false }
+      { "answerText": "Dublin", "isCorrect": false },
+      { "answerText": "Stockholm", "isCorrect": false }
     ]
   },
   {
     "questionText": "Who is CEO of Tesla?",
     "answerOptions": [
-      { "answerText": "Jeff Bezos", "isCorrect": false },
       { "answerText": "Elon Musk", "isCorrect": true },
       { "answerText": "Bill Gates", "isCorrect": false },
       { "answerText": "Tony Stark", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Bananas are seeds?",
+    "answerOptions": [
+      { "answerText": "Yes, correct", "isCorrect": true },
+      { "answerText": "No, fruits", "isCorrect": false }
     ]
   },
   {

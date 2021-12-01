@@ -16,9 +16,9 @@ export function Quiz() {
       <QuizList_a />
       {/*Komponent för bottenmeny*/}
       <BottomMenu />
-      <Link to="/result">
+      {/*       <Link to="/result">
         <Button className="m-3">Resultat</Button>
-      </Link>
+      </Link> */}
     </div>
   );
 }

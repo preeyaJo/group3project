@@ -13,7 +13,7 @@ function QuizList_a() {
   // false byts ut mot state showScore
   const [showScore, setShowScore] = useState(false);
 
-  //återställer alla state till första värdet med onClick på knappen i showScore===true
+  //återställer alla state till första värdet med onClick på knappen i <div.Show-score>
   const resetQuiz = () => {
     setShowScore(false);
     setScore(0);
@@ -46,11 +46,15 @@ function QuizList_a() {
   return (
     <div>
       {showScore ? (
-        <div className="QuizItem score-card rounded p-4 text-center d-flex flex-column justify-content-center">
+        <div className="Show-score QuizItem rounded text-center d-flex flex-column justify-content-center align-items-center">
           <h2>
             Du fick {score} av {nrOfQuestions} rätt
           </h2>
-          <Button onClick={resetQuiz} variant="outline-light" className="my-2">
+          <Button
+            onClick={resetQuiz}
+            variant="outline-secondary"
+            className="mt-3"
+          >
             Spela igen
           </Button>
         </div>
