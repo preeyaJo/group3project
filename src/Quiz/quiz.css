@@ -4,9 +4,9 @@
   box-shadow: 0 0px 30px rgba(0, 0, 50, 0.3), 0 0 40px rgba(0, 0, 0, 0.2) inset;
 }
 
-.score-card {
+.Show-score {
   text-align: center;
-  height: 200px;
+  padding: 10%;
 }
 .blue {
   background-color: #184e77;
