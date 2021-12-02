@@ -26,8 +26,7 @@ function QuizList_a() {
     if (isCorrect === true) {
       const newscore = score + 1;
       setScore(newscore);
-    }
-    // inget else eftersom vi alltid vill att nästa bit kod körs
+    } // inget else eftersom vi alltid vill att nästa(nedan) bit kod körs
 
     // räknar upp +1 onClick
     const nextQuestion = currentQuestion + 1;

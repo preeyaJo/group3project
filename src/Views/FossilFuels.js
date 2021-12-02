@@ -1,23 +1,38 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import BottomMenu from '../Components/BottomMenu';
+import "bootstrap/dist/css/bootstrap.min.css";
+import BottomMenu from "../Components/BottomMenu";
 import GlobalHeader from "../Components/GlobalHeader";
 import Chart from "../Components/Chart";
 
 export function FossilFuels() {
-
   const [data, setData] = useState({});
-  useEffect(()=>{
-    fetch('data/GlobalCo.json')
-    .then(response => response.json())
-    .then((res) => {
-        res=res.filter(x => x.Year > 1950);
-        let gasFlaring = { label: 'Gas Flaring', data: [], backgroundColor:'#CC7B79'};
-        let gasFuel = { label: 'Gas Fuel', data: [], backgroundColor:'#AE94CB'};
-        let liquidFuel = { label: 'Liquid Fuel', data: [], backgroundColor:'#4C7FB2'};
-        let solidFuel = { label: 'Solid Fuel', data: [], backgroundColor:'#59A57F'};
-        let cement = { label: 'Cement', data: [], backgroundColor:'#ABD4A4'};
+  useEffect(() => {
+    fetch("data/GlobalCo.json")
+      .then((response) => response.json())
+      .then((res) => {
+        res = res.filter((x) => x.Year > 1950);
+        let gasFlaring = {
+          label: "Gas Flaring",
+          data: [],
+          backgroundColor: "#CC7B79",
+        };
+        let gasFuel = {
+          label: "Gas Fuel",
+          data: [],
+          backgroundColor: "#AE94CB",
+        };
+        let liquidFuel = {
+          label: "Liquid Fuel",
+          data: [],
+          backgroundColor: "#4C7FB2",
+        };
+        let solidFuel = {
+          label: "Solid Fuel",
+          data: [],
+          backgroundColor: "#59A57F",
+        };
+        let cement = { label: "Cement", data: [], backgroundColor: "#ABD4A4" };
 
         let labels = [];
 
@@ -31,20 +46,19 @@ export function FossilFuels() {
         });
 
         setData({
-            labels: labels,
-            datasets: [gasFlaring, gasFuel, liquidFuel, solidFuel, cement]
+          labels: labels,
+          datasets: [gasFlaring, gasFuel, liquidFuel, solidFuel, cement],
         });
-    });
+      });
   }, []);
 
   return (
-    <div>
-      <GlobalHeader/>
-      <Chart type="line" data={data}  />
-      <BottomMenu/> 
+    <div className="container">
+      <GlobalHeader />
+      <Chart type="line" data={data} />
+      <BottomMenu />
     </div>
   );
 }
 
 export default FossilFuels;
-

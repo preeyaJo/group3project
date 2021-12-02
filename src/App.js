@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./App.css";
 import "./Quiz/quiz.css";
@@ -17,11 +17,12 @@ import Info from "./Views/Info";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  //testar state för att dela en const mellan quiz och high-score
+  const [number, setNumber] = useState(0);
+
   return (
     <div className="App">
       <header className="App-header">
-
-
         <Router>
           <div>
             <Switch>
@@ -32,14 +33,13 @@ function App() {
               <Route path="/sealevels" component={SeaLevels} />
               <Route path="/glaciersize" component={GlacierSize} />
               <Route path="/quizlobby" component={QuizLobby} />
-              <Route path="/quiz" component={Quiz} />
+              <Route number={number} path="/quiz" component={Quiz} />
               <Route path="/result" component={Result} />
               <Route path="/highscore" component={HighScore} />
               <Route path="/info" component={Info} />
             </Switch>
           </div>
         </Router>
-
       </header>
     </div>
   );
