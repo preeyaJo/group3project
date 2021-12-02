@@ -13,6 +13,7 @@ export function Quiz() {
   return (
     <div className="container">
       <GlobalHeader />
+
       <QuizList_a />
       {/*Komponent för bottenmeny*/}
       <BottomMenu />

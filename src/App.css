@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  padding: 70px 0px;
+  padding: 60px 0 43px 0;
   background-color: #e1e6dd;
   min-height: 100vh;
   display: flex;
@@ -27,9 +27,18 @@
 .BottomMenu {
   background-color: #184e77;
   padding: 0px 10px 0px 10px;
-  }
+}
+/* Sätt till samma höjd som bottenmenyn i de andra Vy's */
+.FutureBottom {
+  height: 72px;
+}
 
 .BottomNavItem {
+  color: #ffffff;
+  padding: 10px;
+}
+
+.TopNavItem {
   color: #ffffff;
   padding: 10px;
 }
@@ -41,25 +50,8 @@
   padding: 5px !important ;
 }
 
-
-@media only screen and (min-width: 200px) {
- 
-  
-.BottomNavItem {
-  color: #ffffff;
-  padding: 10px;
-}
-
-.BottomMenu {
-  background-color: #184e77;
-  padding: 10px 0px 10px 0px;
-  }
-
-}
-
-
 @media only screen and (min-width: 700px) {
-} 
+}
 .bottommenu-globe {
   font-size: 1.3em;
 }
@@ -77,39 +69,37 @@
   color: #e1e6dd;
 }
 
-
-.startHeader{
+.startHeader {
   color: #716595;
   font-weight: bold;
   font-size: 2em;
 }
 
-.startLogga{
-  color: #184E77;
+.startLogga {
+  color: #184e77;
   font-size: 7em;
   margin: 15px;
 }
 
-.loginForm{
-  color:#707070;
+.loginForm {
+  color: #707070;
   text-align: left;
   font-size: 14px;
 }
 
-.startButton{
+.startButton {
   background-color: #716595 !important;
   font-weight: bold !important;
   padding-top: 10em;
-  border: #5A5077 !important;
+  border: #5a5077 !important;
   padding-left: 2em !important;
   padding-right: 2em !important;
 }
 
-.group3{
-  color:#707070;
+.group3 {
+  color: #707070;
 }
 
-.groupNames3{
+.groupNames3 {
   font-size: 14px;
-
 }
