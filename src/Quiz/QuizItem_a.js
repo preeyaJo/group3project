@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 /* import { InputGroup, FormControl } from "react-bootstrap"; */
 import { Button } from "react-bootstrap";
 import questions from "./questions_a.json";
+import { UserScoreContext } from "../App";
 
 function QuizList_a() {
+  const { scoreContext, setScoreContext } = React.useContext(UserScoreContext);
+
   const nrOfQuestions = questions.length; // antal frågor
   const [currentQuestion, setCurrentQuestion] = useState(0); //räknare som börjar på 0
   const [score, setScore] = useState(0); //räknare som börjar på 0
@@ -26,6 +30,9 @@ function QuizList_a() {
     if (isCorrect === true) {
       const newscore = score + 1;
       setScore(newscore);
+
+      // Skickar score det till den state som sparar userScoreContext
+      setScoreContext(newscore);
     } // inget else eftersom vi alltid vill att nästa(nedan) bit kod körs
 
     // räknar upp +1 onClick
@@ -36,8 +43,8 @@ function QuizList_a() {
       // sätter räknaren till det nya värdet
       setCurrentQuestion(nextQuestion);
     } else {
-      // om nextQuestion INTE är mindre än antal frågor är Quizen slut och då ändrar vi setScore till true
-      // true i setScore visar innehålet i första parantesen i vår bolean {const ? (if true): (if false) }
+      // om nextQuestion INTE är mindre än antal frågor är Quizen slut och då ändrar vi "setScore ?" till true
+      // true i setScore visar innehållet i första parantesen i vår bolean {const ? (if true): (if false) }
       setShowScore(true);
     }
   };
@@ -49,13 +56,16 @@ function QuizList_a() {
           <h2>
             Du fick {score} av {nrOfQuestions} rätt
           </h2>
-          <Button
-            onClick={resetQuiz}
-            variant="outline-secondary"
-            className="mt-3"
-          >
-            Spela igen
-          </Button>
+          <div>
+            <Button onClick={resetQuiz} variant="outline-light" className="m-2">
+              Spela igen
+            </Button>
+            <Link to="./highscore">
+              <Button variant="outline-light" className="m-2">
+                Highscore
+              </Button>
+            </Link>
+          </div>
         </div>
       ) : (
         <div className="QuizItem rounded p-4">
