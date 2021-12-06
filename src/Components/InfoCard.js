@@ -1,67 +1,60 @@
-/*Förberett array för infocard - egentligen bara kopierat från futurelist än så länge */
-
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-import "../App.css";
+import "../infocard.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 /*Array för info*/
 const infoCardArray = [
     {
-      year: 2021,
-      description:
-        "Vi arbetar idag med att lära ut hur klimatet kommer förändras efter tid. Men trots detta blir inte förändringen tillräcklig.",
+      category: "fossilfuels",
+      info:
+        "Text om fossila bränslen",
       image:
-        "https://cdn.pixabay.com/photo/2020/01/04/19/17/earth-4741488_1280.jpg",
+        "https://cdn.pixabay.com/photo/2018/05/26/10/59/power-station-3431136_1280.jpg",
     },
     {
-      year: 2025,
-      description: "Havet stiger 1 meter. Torka blir allt vanligare.",
+      category: "globaltemperature",
+      info:
+        "Text om temperatur",
       image:
-        "https://cdn.pixabay.com/photo/2019/12/10/07/18/ice-4685227__480.jpg",
+        "https://images.pexels.com/photos/2305169/pexels-photo-2305169.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     },
     {
-      year: 2030,
-      description: "Farligt väder ökar med 250%. Havet stiger 3 meter.",
+      category: "sealevels",
+      info:
+        "Text om havsnivåer",
       image:
-        "https://cdn.pixabay.com/photo/2020/09/15/12/51/man-5573521__480.jpg",
-    },
-  
-    {
-      year: 2035,
-      description: "Korallerna i havet dör. Golfströmmen vänder. ",
-      image:
-        "https://cdn.pixabay.com/photo/2016/11/22/19/33/sea-1850228_1280.jpg",
+        "https://images.pexels.com/photos/2127969/pexels-photo-2127969.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     },
     {
-      year: 2040,
-      description: "Havet stiger 6 meter. Krig bryter ut över driksvatten.",
+      category: "glaciersize",
+      info:
+        "Text om glaciärer",
       image:
-        "https://cdn.pixabay.com/photo/2016/11/21/17/37/arid-1846708_1280.jpg",
-    },
-    {
-      year: 2045,
-      description: "Krig över resurser blir allt vanligare.",
-      image:
-        "https://cdn.pixabay.com/photo/2017/07/26/12/04/destruction-2541513_1280.jpg",
-    },
-    {
-      year: 2050,
-      description:
-        "Temperaturen skenar. Naturen som vi idag känner till den är borta.",
-      image:
-        "https://cdn.pixabay.com/photo/2020/05/26/20/38/climate-change-5224748_1280.jpg",
+        "https://cdn.pixabay.com/photo/2014/07/30/02/00/iceberg-404966_1280.jpg",
     },
   ];
   
-  function InfoCard() {
-    return infoCardArray.map((infoCard) => (
-      <section>
-        <img src={infoCard.image} alt="" />
-        <h2 className="timeline-text-top">{infoCard.year}</h2>
-        <p className="timeline-text-center">{infoCard.description}</p>
-      </section>
-    ));
+  function InfoCard(props) {
+
+    const  data = infoCardArray.find(p=>p.category == props.Category);
+
+    return (
+  
+  <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src={data.image}/>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <p class="card-text">
+              <small class="text-muted">{data.info}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    ); 
   }
   
+  export default InfoCard;
