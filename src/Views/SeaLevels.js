@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import BottomMenu from "../Components/BottomMenu";
 import GlobalHeader from "../Components/GlobalHeader";
 import Chart from "../Components/Chart";
+import InfoCard from "../Components/InfoCard";
 
 export function SeaLevels() {
   const [data, setData] = useState({});
@@ -37,6 +38,7 @@ export function SeaLevels() {
   return (
     <div className="container">
       <GlobalHeader />
+      <InfoCard Category="sealevels"/>
       <Chart type="bar" data={data} />
       <BottomMenu />
     </div>
