@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import "../Quiz/quiz.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import BottomMenu from "../Components/BottomMenu";
 
@@ -13,17 +14,13 @@ export function QuizLobby() {
     <div className="container">
       <GlobalHeader />
       <div className="Show-score QuizItem rounded text-center text-secondary d-flex flex-column justify-content-center align-items-center">
-        <h1>Quiz</h1>
-        <div>
+        <img src="dice-solid.png" alt="A pointy tower" className=" my-3" />
+        <div className=" d-flex flex-column justify-content-center align-items-center">
           <Link to="/quiz">
-            <Button variant="outline-secondary" className="m-2">
-              Spela quiz
-            </Button>
+            <Button className="m-2 Btn-quiz">Spela quiz</Button>
           </Link>
           <Link to="/highscore">
-            <Button variant="outline-secondary" className="m-2">
-              Highscore
-            </Button>
+            <Button className="m-2 Btn-quiz Btn-quiz--option">Highscore</Button>
           </Link>
         </div>
       </div>
