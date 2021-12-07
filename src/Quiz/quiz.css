@@ -1,13 +1,21 @@
 .QuizItem {
-  background-color: #184e77;
+  /*   background-color: #184e77; */
   text-align: left;
-  box-shadow: 0 0px 30px rgba(0, 0, 50, 0.3), 0 0 40px rgba(0, 0, 0, 0.2) inset;
+  /*  box-shadow: 0 0px 30px rgba(0, 0, 50, 0.3), 0 0 40px rgba(0, 0, 0, 0.2) inset; */
 }
-
+.quizImage {
+  max-width: 400px;
+}
 .Show-score {
   text-align: center;
   padding: 10%;
 }
 .blue {
   background-color: #184e77;
+}
+
+span.nrOfQuestions {
+  font-size: calc(12px + 1vmin);
+  font-weight: 400;
+  opacity: 0.6;
 }

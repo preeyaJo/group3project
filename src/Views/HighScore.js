@@ -13,7 +13,7 @@ export function HighScore() {
   const { scoreContext } = React.useContext(UserScoreContext);
 
   return (
-    <div className="container">
+    <div className="container text-secondary">
       <GlobalHeader />
       <div className="Show-score QuizItem rounded text-center d-flex flex-column justify-content-center align-items-center">
         <h1>Highscore</h1>
@@ -23,7 +23,7 @@ export function HighScore() {
         </div>
         <div>
           <Link to="/quiz">
-            <Button variant="outline-light m-2">Spela quiz</Button>
+            <Button variant="outline-secondary m-2">Spela quiz</Button>
           </Link>
         </div>
       </div>

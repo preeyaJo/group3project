@@ -12,16 +12,16 @@ export function QuizLobby() {
   return (
     <div className="container">
       <GlobalHeader />
-      <div className="Show-score QuizItem rounded text-center d-flex flex-column justify-content-center align-items-center">
+      <div className="Show-score QuizItem rounded text-center text-secondary d-flex flex-column justify-content-center align-items-center">
         <h1>Quiz</h1>
         <div>
           <Link to="/quiz">
-            <Button variant="outline-light" className="m-2">
+            <Button variant="outline-secondary" className="m-2">
               Spela quiz
             </Button>
           </Link>
           <Link to="/highscore">
-            <Button variant="outline-light" className="m-2">
+            <Button variant="outline-secondary" className="m-2">
               Highscore
             </Button>
           </Link>
