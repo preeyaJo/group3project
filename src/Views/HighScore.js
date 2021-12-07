@@ -23,7 +23,9 @@ export function HighScore() {
         </div>
         <div>
           <Link to="/quiz">
-            <Button variant="outline-secondary m-2">Spela quiz</Button>
+            <Button variant="outline-secondary" className="m-2 Btn-quiz">
+              Spela quiz
+            </Button>
           </Link>
         </div>
       </div>

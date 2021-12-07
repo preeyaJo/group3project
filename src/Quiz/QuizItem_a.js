@@ -64,12 +64,15 @@ function QuizList_a() {
             <Button
               onClick={resetQuiz}
               variant="outline-secondary"
-              className="m-2"
+              className="m-2 Btn-quiz Btn-quiz--option"
             >
               Spela igen
             </Button>
             <Link to="./highscore">
-              <Button variant="outline-secondary" className="m-2">
+              <Button
+                variant="outline-secondary"
+                className="m-2 Btn-quiz Btn-quiz--option"
+              >
                 Highscore
               </Button>
             </Link>
@@ -79,7 +82,7 @@ function QuizList_a() {
         <div className="QuizItem rounded text-secondary p-4">
           <img
             src={questionsArray[currentQuestion].quizImage}
-            alt="Picture of a pointy tower"
+            alt="A pointy tower"
             className=" my-3 quizImage"
           />
           <h2 className="">
@@ -95,7 +98,7 @@ function QuizList_a() {
                 <Button
                   onClick={() => handleButtonClick(answerOption.isCorrect)}
                   variant="outline-secondary"
-                  className="my-2"
+                  className="my-2 Btn-quiz"
                   key={index}
                   size="sm"
                 >
