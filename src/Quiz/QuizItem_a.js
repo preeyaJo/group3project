@@ -1,30 +1,32 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-/* import { InputGroup, FormControl } from "react-bootstrap"; */
 import { Button } from "react-bootstrap";
-import questions from "./questions_a.json";
+import questionsArray from "./questions_a.json";
 import { UserScoreContext } from "../App";
 
 function QuizList_a() {
-  const { scoreContext, setScoreContext } = React.useContext(UserScoreContext);
+  // sparar möjligheten att ändra "state scoreContext"
+  // varje gång vi klickar på ett svar uppdateras även scoreContext med det nya värdet i handleButtonClick().
+  const { setScoreContext } = React.useContext(UserScoreContext);
 
-  const nrOfQuestions = questions.length; // antal frågor
-  const [currentQuestion, setCurrentQuestion] = useState(0); //räknare som börjar på 0
+  const nrOfQuestions = questionsArray.length; // sparar antalet antal frågor i vår array.
+  const [currentQuestion, setCurrentQuestion] = useState(0); //räknare som bestämmer vilken fråga som visas i questions-array
   const [score, setScore] = useState(0); //räknare som börjar på 0
 
   // innehållet läggs i en false/true-logik
-  // {false ? (visas om true) : (visas om false)}
-  // false byts ut mot state showScore
+  // {true/false ? (visas om true) : (visas om false)}
+  // false byts ut mot true i state showScore när vi svarar på sista frågan
   const [showScore, setShowScore] = useState(false);
 
-  //återställer alla state till första värdet med onClick på knappen i <div.Show-score>
+  // återställer alla state till första värdet med onClick på knappen i <div.Show-score>
+  // Hade varit bättre med useEffect?
   const resetQuiz = () => {
     setShowScore(false);
     setScore(0);
     setCurrentQuestion(0);
   };
 
-  // Varje gång vi klickar på en knapp
+  // Varje gång vi klickar på en svarsknapp
   const handleButtonClick = (isCorrect) => {
     // om questions.answerOption.isCorrect är true så ökar vi state sccore med +1
     if (isCorrect === true) {
@@ -39,7 +41,7 @@ function QuizList_a() {
     const nextQuestion = currentQuestion + 1;
 
     // om nextQuestion är mindre än antal frågor är det ok att uppdatera index till nästa fråga
-    if (nextQuestion < questions.length) {
+    if (nextQuestion < questionsArray.length) {
       // sätter räknaren till det nya värdet
       setCurrentQuestion(nextQuestion);
     } else {
@@ -49,40 +51,53 @@ function QuizList_a() {
     }
   };
 
+  // setScore {statement ? (if true): (if false) } visar innehållet i andra parantesen tills vi klickar på svar i sista frågan.
+  // efter sista fråga ändras showScore till true och innehållet i försa parantesen visas.
   return (
     <div>
       {showScore ? (
         <div className="Show-score QuizItem rounded text-center d-flex flex-column justify-content-center align-items-center">
-          <h2>
+          <h2 className="text-secondary">
             Du fick {score} av {nrOfQuestions} rätt
           </h2>
           <div>
-            <Button onClick={resetQuiz} variant="outline-light" className="m-2">
+            <Button
+              onClick={resetQuiz}
+              variant="outline-secondary"
+              className="m-2"
+            >
               Spela igen
             </Button>
             <Link to="./highscore">
-              <Button variant="outline-light" className="m-2">
+              <Button variant="outline-secondary" className="m-2">
                 Highscore
               </Button>
             </Link>
           </div>
         </div>
       ) : (
-        <div className="QuizItem rounded p-4">
-          <h2>
-            Fråga {currentQuestion + 1} /{nrOfQuestions}
+        <div className="QuizItem rounded text-secondary p-4">
+          <img
+            src={questionsArray[currentQuestion].quizImage}
+            alt="Picture of a pointy tower"
+            className=" my-3 quizImage"
+          />
+          <h2 className="">
+            Fråga {currentQuestion + 1}
+            <span className="nrOfQuestions"> /{nrOfQuestions}</span>
           </h2>
           <div className="py-3">
-            <p>{questions[currentQuestion].questionText}</p>
+            <p>{questionsArray[currentQuestion].questionText}</p>
           </div>
           <div className="d-flex flex-column justify-content-center ">
-            {questions[currentQuestion].answerOptions.map(
+            {questionsArray[currentQuestion].answerOptions.map(
               (answerOption, index) => (
                 <Button
                   onClick={() => handleButtonClick(answerOption.isCorrect)}
-                  variant="outline-light"
+                  variant="outline-secondary"
                   className="my-2"
                   key={index}
+                  size="sm"
                 >
                   {answerOption.answerText}
                 </Button>
@@ -96,13 +111,3 @@ function QuizList_a() {
 }
 
 export default QuizList_a;
-
-/*         <Button variant="outline-light" className="m-1">
-          {post.answerOptions.answerText}
-        </Button>
-        <Button variant="outline-light" className="m-1">
-          {post.alt2}
-        </Button>
-        <Button variant="outline-light" className="m-1">
-          {post.alt3}
-        </Button> */
