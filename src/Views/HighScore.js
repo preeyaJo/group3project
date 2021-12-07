@@ -13,9 +13,9 @@ export function HighScore() {
   const { scoreContext } = React.useContext(UserScoreContext);
 
   return (
-    <div className="container text-secondary">
+    <div className="container">
       <GlobalHeader />
-      <div className="Show-score QuizItem rounded text-center d-flex flex-column justify-content-center align-items-center">
+      <div className="Show-score QuizItem rounded text-center text-secondary d-flex flex-column justify-content-center align-items-center">
         <h1>Highscore</h1>
         <div className="p-3 d-flex justify-content-center align-items-center">
           <span>Ditt senaste resultat</span>
