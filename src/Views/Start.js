@@ -21,23 +21,23 @@ export function Start() {
   /* Set data to user */
   const adminUser = {
     name: "Anna",
-    email: "anna@anna.com",
+    userID: "Anna2022",
     password: "anna123"
   }
 
   /* State to login */
-  const [user, setUser] = useState({email: ""});
+  const [user, setUser] = useState({userID: ""});
   const [error, setError] = useState("");
 
   /* Function for login in */
   const Login = details => {
 
     /* Checks if the user input data is correct to adminUser */
-    if (details.email === adminUser.email && details.password === adminUser.password){
+    if (details.userID === adminUser.userID && details.password === adminUser.password){
 
       /* set details to state */
       setUser({
-        email: details.email
+        userID: details.userID
       });
       
       
@@ -54,7 +54,7 @@ export function Start() {
     <div>
 
       {/* Change path when inlog data is correct */}
-      {(user.email !== "") ? (
+      {(user.userID !== "") ? (
         <div>
         <Redirect to="/futureclimate"></Redirect>
       </div>

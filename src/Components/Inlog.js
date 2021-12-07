@@ -12,11 +12,12 @@ import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
 /* Import Bootstrap */
 import Form from 'react-bootstrap/Form';
 import Stack from 'react-bootstrap/Stack';
+import Button from 'react-bootstrap/Button';
 
 
 /* Start function for inlogForm */
 export function Inlog({Login, error}) {
-  const [details, setDetails] = useState({name: "", email: "", password: ""});
+  const [details, setDetails] = useState({name: "", userID: "", password: ""});
 
   const submitHandler = e => {
     e.preventDefault();
@@ -41,30 +42,24 @@ export function Inlog({Login, error}) {
 
             <Form.Group className="mb-2" controlId="formGroupEmail">
                 <Form.Label>Id:</Form.Label>
-                <Form.Control type="email" id="email" onChange={e => setDetails({...details, email: e.target.value})} value={details.email} placeholder="Exemel: Efternamn123" />
+                <Form.Control type="name" onChange={e => setDetails({...details, userID: e.target.value})} value={details.userID} placeholder="Exemel: Förnamn1234" />
             </Form.Group>
 
 
             <Form.Group className="mb-3" controlId="formGroupPassword">
                 <Form.Label>Lösenord:</Form.Label>
-                <Form.Control type="password" id="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} placeholder="Ditt lösenord"/>
+                <Form.Control type="password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} placeholder="Ditt lösenord"/>
             </Form.Group>
 
             
             
             {/* Start button */}
-              <input type="submit" value="Starta" />
-           
+              <Button className="startButton mb-5" type="submit">Starta</Button>
 
         </Form>
         </Stack>
 
         </div>
-
-      {/*  
-      <Link to="/futureclimate">
-        <Button className="startButton mb-5" type="submit" value="login">Starta</Button>
-      </Link>*/}
 
 <div className="group3">
         <h2>En app av Grupp 3</h2>
