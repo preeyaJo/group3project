@@ -39,7 +39,7 @@ export function SeaLevels() {
     <div className="container">
       <GlobalHeader />
       <InfoCard Category="sealevels"/>
-      <Chart type="bar" data={data} />
+      <Chart Category="sealevels" type="bar" data={data} />
       <BottomMenu />
     </div>
   );
