@@ -40,15 +40,15 @@ const infoCardArray = [
 
     return (
   
-  <div class="card mb-3">
-      <div class="row g-0">
+  <div className="card mb-3">
+      <div className="row g-0">
         <div class="col-md-4">
-          <img src={data.image}/>
+          <img className="infocard-image" src={data.image}/>
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <p class="card-text">
-              <small class="text-muted">{data.info}</small>
+        <div className="col-md-8">
+          <div className="card-body">
+            <p className="card-text">
+              <small className="text-muted">{data.info}</small>
             </p>
           </div>
         </div>
