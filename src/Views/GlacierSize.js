@@ -45,7 +45,7 @@ export function GlacierSize() {
     <div className="container">
       <GlobalHeader />
       <InfoCard Category="glaciersize"/>
-      <Chart type="bubble" data={data} />
+      <Chart Category="glaciersize" type="bubble" data={data} />
       <BottomMenu />
     </div>
   );

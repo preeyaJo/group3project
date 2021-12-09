@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { useState } from "react";
 
 import "./App.css";
 import "./Quiz/quiz.css";

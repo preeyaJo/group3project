@@ -57,7 +57,7 @@ export function FossilFuels() {
     <div className="container">
       <GlobalHeader />
       <InfoCard Category="fossilfuels"/>
-      <Chart type="line" data={data} />
+      <Chart Category="fossilfuels" type="line" data={data} />
       <BottomMenu />
     </div>
   );

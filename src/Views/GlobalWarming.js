@@ -33,7 +33,7 @@ export function GlobalWarming() {
     <div className="container">
       <GlobalHeader />
       <InfoCard Category="globaltemperature"/>
-      <Chart type="bar" data={data} />
+      <Chart Category="globaltemperature" type="bar" data={data} />
       <BottomMenu />
     </div>
   );
