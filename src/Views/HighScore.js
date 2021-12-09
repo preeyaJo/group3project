@@ -1,24 +1,35 @@
 import React from "react";
 import "../App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { UserScoreContext } from "../App";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 import GlobalHeader from "../Components/GlobalHeader";
 import BottomMenu from "../Components/BottomMenu";
 
 export function HighScore() {
+  const { scoreContext } = React.useContext(UserScoreContext);
+
   return (
-    <div>
-      <GlobalHeader/>
-      <BottomMenu/>
-      <Link to="/quiz">
-        <Button>Spela quizet</Button>
-      </Link>
-      <Link to="/cctopics">
-        <Button>Läs mer om klimat</Button>
-      </Link>
+    <div className="container">
+      <GlobalHeader />
+      <div className="Show-score QuizItem rounded text-center text-secondary d-flex flex-column justify-content-center align-items-center">
+        <h1>Highscore</h1>
+        <div className="p-3 d-flex justify-content-center align-items-center">
+          <span>Ditt senaste resultat</span>
+          <span className="p-3 h1 mb-0">{scoreContext}</span>
+        </div>
+        <div>
+          <Link to="/quiz">
+            <Button variant="outline-secondary" className="m-2 Btn-quiz">
+              Spela quiz
+            </Button>
+          </Link>
+        </div>
+      </div>
+      <BottomMenu />
     </div>
   );
 }
