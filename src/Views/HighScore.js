@@ -12,6 +12,8 @@ import BottomMenu from "../Components/BottomMenu";
 export function HighScore() {
   const { scoreContext } = React.useContext(UserScoreContext);
 
+  
+
   return (
     <div className="container">
       <GlobalHeader />
