@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { UserScoreContext } from "../App";
@@ -12,22 +12,28 @@ import BottomMenu from "../Components/BottomMenu";
 
 export function HighScore() {
   const { scoreContext } = React.useContext(UserScoreContext);
-  
 
-  const highScoreList = 
-    [
-      {name: "Shara, N.", result: 10},
-      {name: "David, G.", result: 8},
-      {name: "Jafar, A.", result: 9},
-      {name: "Alexandra, L.", result: 7}
-    ];
+  const [highScoreList, sethighScoreList] = useState([
+    { name: "Shara, N.", result: 10 },
+    { name: "Alexandra, L.", result: 7 },
+    { name: "David, G.", result: 8 },
+    { name: "Jafar, A.", result: 9 },
+  ]);
+  //{e => setDetails({...details, userID: e.target.value})} value={details.userID}
+  const adScoreContext = () => {
+    /*  sethighScoreList({ ...highScoreList, name: "Anna", score: 15 }); */
+    console.log(highScoreList);
+  };
 
-    const showHighScore = highScoreList.map((highScoreList, index) => (
-      <li key={index}>
-        {highScoreList.name} {highScoreList.result}/{questionsArray.length}
-      </li>
-    ));
-  
+  const sortedList = highScoreList.sort(function (a, b) {
+    if (a.result > b.result) return -1;
+  });
+
+  const showHighScore = sortedList.map((post, index) => (
+    <li key={index}>
+      {post.name} {post.result}/{questionsArray.length}
+    </li>
+  ));
 
   return (
     <div className="container">
