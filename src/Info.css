@@ -1,4 +1,4 @@
-h1{
+h2{
   color:black;
   padding-bottom: 1em;
   text-align: center !important;
@@ -18,8 +18,14 @@ text-align: initial !important;
   background-color: #716595 !important;
   border: #5a5077 !important;
   padding: 0.5em 2em !important;
-  hoover: pointer;
+  cursor: pointer;
+
 }
+
+.m-2{
+  margin: 3em !important;
+}
+
 
 .contact{
   padding-top: 0.5em !important;

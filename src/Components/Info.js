@@ -22,11 +22,11 @@ function informations(props) {
       <div>
     <div className="information">
       {" "}
-      <h1 className="info-head">Information till lärare och vårdnashavare</h1>
-      <p>
+      <h2 className="info-head">Information till lärare och vårdnashavare</h2>
+      
         <p>{data.info1}</p>
         <p>{data.info2}</p>
-      </p>
+      
       <div className="contact Show-score QuizItem rounded text-center text-secondary d-flex flex-column justify-content-center align-items-center">
         <p>{data.info3}</p>
         <p>
@@ -37,11 +37,11 @@ function informations(props) {
         </p>
       </div>
       </div>
-      <p>
+     
       <Link to="/">
         <Button className="knapp m-2">Tillbaka till hem</Button>
       </Link>
-    </p>
+  
     </div>
   );
 }
