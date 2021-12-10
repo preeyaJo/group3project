@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import "../App.css";
@@ -22,7 +22,7 @@ export function HighScore() {
 
   // Tar bort alla resultat som är 0 så Anna inte syns i listan utan att ha gjort Quizet
   const filteredList = highScoreList.filter((listItems) => {
-    return listItems.result != 0;
+    return listItems.result !== 0;
   });
 
   // Sorterar listan på resultat med högst värde överst

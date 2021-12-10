@@ -60,8 +60,8 @@ function FutureListItems() {
 }
 
 /*Funktion för att skriva ut timeline - GAMLA*/
-{
-  /*function FutureListItems() {
+
+/*function FutureListItems() {
   return (
 
 	futureListArray.map(futurelist=>(
@@ -81,10 +81,8 @@ function FutureListItems() {
       
   );
 } */
-}
 
-{
-  /* Om vi vill få timeline perfekt till skärm sparar jag koden jag hade först :)
+/* Om vi vill få timeline perfekt till skärm sparar jag koden jag hade först :)
 <div>
     <section id="timeline" className="timeline-container">
 		<div className="timeline-block">
@@ -172,7 +170,6 @@ function FutureListItems() {
 		</div>
 	</section>
     </div>*/
-}
 
 /*Exporterar*/
 export default FutureListItems;
