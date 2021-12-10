@@ -1,18 +1,16 @@
 h1{
   color:black;
   padding-bottom: 1em;
+  text-align: center !important;
 }
 
 .information{
 color: black !important;
-
-padding-left: 1em;
-padding-right: 1em;
-padding: 30px 0 23px 0;
-    background-color: #e1e6dd;
-    min-height: 30vh;
-
-
+padding-left: 3em !important;
+padding-right: 3em !important;
+padding-top: 2em;
+padding-bottom: 0.5em;
+text-align: initial !important;
 }
 
 .knapp{
@@ -20,11 +18,15 @@ padding: 30px 0 23px 0;
   background-color: #716595 !important;
   border: #5a5077 !important;
   padding: 0.5em 2em !important;
+  hoover: pointer;
 }
 
 .contact{
-  padding-top: 1em !important;
-  padding-bottom: 1em !important;
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: black !important;
 }
 
 .info-head{
