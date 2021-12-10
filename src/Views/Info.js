@@ -1,18 +1,20 @@
+import Info from "../Components/Info";
 import React from "react";
 import "../App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import GlobalHeader from '../Components/GlobalHeader';
+import "../Info.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import GlobalHeader from "../Components/GlobalHeader";
+import BottomMenu from "../Components/BottomMenu";
 
-export function Info() {
+export function Information() {
   return (
     <div>
       {/*Komponent för global header*/}
-      <GlobalHeader/>
-
-      <h1>Info om appen</h1>
-      <h2>Bla bla bla</h2>
+      <GlobalHeader />
+      <Info calls="information" />
+      <BottomMenu />
     </div>
   );
 }
 
-export default Info;
+export default Information;
