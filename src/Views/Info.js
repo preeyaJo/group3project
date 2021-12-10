@@ -11,7 +11,7 @@ export function Information() {
     <div>
       {/*Komponent för global header*/}
       <GlobalHeader />
-      <Info calls="information" />;
+      <Info calls="information" />
       <BottomMenu />
     </div>
   );
