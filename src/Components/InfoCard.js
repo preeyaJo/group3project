@@ -58,7 +58,7 @@ const infoCardArray = [
     return (
   
   <div className="card mb-3">
-        <div class="col">
+        <div className="col">
           <img className="card-img-top" src={data.image} alt=""/>
         </div>
         <div className="col">
