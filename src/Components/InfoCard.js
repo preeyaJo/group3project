@@ -53,13 +53,13 @@ const infoCardArray = [
         
   function InfoCard(props) {
 
-    const  data = infoCardArray.find(p=>p.category == props.Category);
+    const  data = infoCardArray.find(p=>p.category === props.Category);
 
     return (
   
   <div className="card mb-3">
         <div class="col">
-          <img className="card-img-top" src={data.image}/>
+          <img className="card-img-top" src={data.image} alt=""/>
         </div>
         <div className="col">
           <div className="card-body">
