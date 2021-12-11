@@ -11,7 +11,7 @@ import { faWater } from "@fortawesome/free-solid-svg-icons";
 import { faMountain } from "@fortawesome/free-solid-svg-icons";
 import { faDice } from "@fortawesome/free-solid-svg-icons";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
-
+/**/
 
 function BottomMenu() {
   return (
