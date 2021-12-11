@@ -36,11 +36,15 @@ export function SeaLevels() {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <GlobalHeader />
+    <div className="container">
+      
       <InfoCard Category="sealevels"/>
       <Chart Category="sealevels" type="bar" data={data} />
-      <BottomMenu />
+      
+    </div>
+    <BottomMenu />
     </div>
   );
 }
