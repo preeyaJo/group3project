@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import questionsArray from "./questions_a.json";
+import questionsArray from "./questions.json";
 import { UserScoreContext } from "../App";
 
-function QuizList_a() {
+function QuizList() {
   // sparar möjligheten att ändra "state scoreContext"
   // varje gång vi klickar på ett svar uppdateras även scoreContext med det nya värdet i handleButtonClick().
   const { setScoreContext } = React.useContext(UserScoreContext);
@@ -113,4 +113,4 @@ function QuizList_a() {
   );
 }
 
-export default QuizList_a;
+export default QuizList;

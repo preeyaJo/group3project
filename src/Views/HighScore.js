@@ -4,11 +4,12 @@ import Button from "react-bootstrap/Button";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { UserScoreContext } from "../App";
-import questionsArray from "../Quiz/questions_a.json";
+import questionsArray from "../Quiz/questions.json";
 import GlobalHeader from "../Components/GlobalHeader";
 import BottomMenu from "../Components/BottomMenu";
 
 export function HighScore() {
+  // lagrar antal rätta svar från Quiz.
   const { scoreContext } = React.useContext(UserScoreContext);
 
   // Lagrar highscore i simulering av server. -------------> TODO: Flytta till egen fil och använd fetch().
@@ -20,23 +21,27 @@ export function HighScore() {
     { name: "Anna, E.", result: scoreContext },
   ];
 
-  // Tar bort alla resultat som är 0 så Anna inte syns i listan utan att ha gjort Quizet
+  // Retunerar alla resultat som INTE är 0 vilket filtrerar bort användare som inte genomfört quiz ännu.
   const filteredList = highScoreList.filter((listItems) => {
     return listItems.result !== 0;
   });
 
-  // Sorterar listan på resultat med högst värde överst
+  // Sorterar listan i fallande ordning
   const sortedList = filteredList.sort(function (a, b) {
-    if (a.result > b.result) return -1;
+    // if (a.result > b.result) return -1;
+    return b.result - a.result;
   });
 
-  // lägger varje person i vår array i ett element under varandra
+  // Sparar map() i en variabel att placera i JSX
+  // lägger varje person i vår array highScoreList i ett element
+  // questionsArray.length visar hur många möjliga poäng man kan få
   const showHighScore = sortedList.map((listItems, index) => (
     <span key={index}>
       {listItems.name} {listItems.result}/{questionsArray.length}
     </span>
   ));
 
+  // retunerar JSX med map() som variabel showHighScore
   return (
     <div className="container">
       <GlobalHeader />
