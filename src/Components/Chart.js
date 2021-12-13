@@ -1,4 +1,4 @@
-import "../infocard.css";
+import "../Style/futureclimate.css";
 import { useEffect } from "react";
 import { Chart as Chartjs, registerables } from 'chart.js';
 Chartjs.register(...registerables);

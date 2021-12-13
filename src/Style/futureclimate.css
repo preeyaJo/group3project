@@ -1,0 +1,78 @@
+
+  /*Knapp till kategorier och dess hover*/
+  .button-to-categories {
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+/*Hover på knapp till kategorier*/
+.button-to-categories:hover {
+  color: #e1e6dd;
+  text-decoration: none !important;
+}
+
+/*Style på bilder till timeline*/
+.timeline-image {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    z-index: 1;
+    opacity: 70%;
+  }
+
+  /*Stylar timeline så bilderna och text läggs rätt*/
+.section-timeline {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr; 
+    background-color: #000000 !important;
+  }
+
+  /*Gör text på timeline responsiv*/
+  @media only screen and (min-width: 300px) {
+ 
+    .timeline-text-top {
+      text-align: left !important;
+      color: white;
+      font-weight: bold;
+      font-size: 1.6em;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      z-index: 2;
+      padding: 30px 0px 0px 40px ;
+    }
+    
+    .timeline-text-center {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      z-index: 2;
+      padding: 150px 40px 0px 40px ;
+      color: white !important;
+      text-align: center !important;
+    }
+  }
+
+    @media only screen and (min-width: 700px) {
+ 
+      .timeline-text-top {
+        text-align: left;
+        font-size: 1.6em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        z-index: 2;
+        padding: 30px 0px 0px 30px ;
+      }
+      
+      .timeline-text-center {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        z-index: 2;
+        padding: 320px 40px 0px 40px ;
+      }
+    
+    }

@@ -1,5 +1,6 @@
-import "../infocard.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+/*Importerar CSS*/
+import "../Style/infocard.css";
+
 
 
 /*Array för info*/
@@ -54,24 +55,25 @@ const infoCardArray = [
     },
   ];
   
-        
+  /*Skriver ut InfoCard genom .find för tillhörande kategori och view*/
   function InfoCard(props) {
 
     const  data = infoCardArray.find(p=>p.category === props.Category);
 
     return (
-  
+
+  /*InfoCard*/
   <div className="">
         <div className="col infocard">
-          <img className="card-img-top" src={data.image} alt=""/>
+          <img className="card-img-top" src={data.image} alt=""/> {/*Bild till InfoCard*/}
         </div>
         <div className="col">
           <div className="card-body">
             <div className="card-text">
-              <p className="text-infocard">{data.info1}</p><br/>
-              <p className="heading-infocard"><strong>{data.heading}</strong></p>
-              <p className="text-infocard">{data.info2}</p><br/>
-              <p className="text-infocard">{data.info3}</p><br/>
+              <p className="text-infocard">{data.info1}</p><br/> {/*Info till InfoCard*/}
+              <p className="heading-infocard"><strong>{data.heading}</strong></p>{/*Rubrik till InfoCard*/}
+              <p className="text-infocard">{data.info2}</p><br/>{/*Info till InfoCard*/}
+              <p className="text-infocard">{data.info3}</p><br/>{/*Info till InfoCard*/}
             </div>
         </div>
       </div>
@@ -79,4 +81,5 @@ const infoCardArray = [
     ); 
   }
   
+  /*Exporterar*/
   export default InfoCard;

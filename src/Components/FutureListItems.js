@@ -1,4 +1,5 @@
-import "../futureclimate.css";
+/*Importerar CSS*/
+import "../Style/futureclimate.css";
 
 /*Array för boxarna*/
 const futureListArray = [
@@ -49,13 +50,14 @@ const futureListArray = [
   },
 ];
 
+/*Funktion för att visa timeline*/
 function FutureListItems() {
-  return futureListArray.map((futurelist, index) => (
-    <section key={index}>
+  return futureListArray.map((futurelist, index) => ( /*Skriver ut genom .map*/
+    <section className="section-timeline" key={index}>
 
-      <img className="timeline-image" src={futurelist.image} alt="" />
-      <h2 className="timeline-text-top">{futurelist.year}</h2>
-      <p className="timeline-text-center">{futurelist.description}</p>
+      <img className="timeline-image" src={futurelist.image} alt="" /> {/*Bilder till timeline*/}
+      <h2 className="timeline-text-top">{futurelist.year}</h2> {/*År till timeline*/}
+      <p className="timeline-text-center">{futurelist.description}</p> {/*Text till timeline*/}
 
     </section>
   ));

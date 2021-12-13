@@ -1,6 +1,10 @@
+/*Importerar React*/
 import React, { useEffect, useState } from "react";
-import "../App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
+/*Importerar CSS */
+import "../Style/App.css";
+
+/*Importerar komponenter */
 import BottomMenu from "../Components/BottomMenu";
 import GlobalHeader from "../Components/GlobalHeader";
 import Chart from "../Components/Chart";
@@ -45,6 +49,7 @@ export function GlacierSize() {
 
   return (
     <div>
+      {/*Toppmeny*/}
       <GlobalHeader />
     <div className="container extraSpacing">
       
@@ -53,9 +58,11 @@ export function GlacierSize() {
       <Chart Category="glaciersize" type="bubble" data={data} />
       
     </div>
+    {/*Bottenmeny*/}
     <BottomMenu />
     </div>
   );
 }
 
+/*Exporterar*/
 export default GlacierSize;

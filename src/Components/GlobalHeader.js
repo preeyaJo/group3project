@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-
-import "../App.css";
+import "../Style/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "react-bootstrap/Navbar";

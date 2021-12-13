@@ -1,9 +1,15 @@
-import "../App.css";
+/*Importerar css*/
+import "../Style/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+/*Importerar komponenter*/
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+
+/*Importerar från DOM*/
 import { NavLink } from "react-router-dom";
 
+/*Importerar ikoner från FontAwesome*/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIndustry } from "@fortawesome/free-solid-svg-icons";
 import { faTemperatureLow } from "@fortawesome/free-solid-svg-icons";
@@ -15,9 +21,10 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 function BottomMenu() {
   return (
+    /*Navbar för bottenmeny*/
     <Navbar className="BottomMenu" fixed="bottom">
       <Container>
-      <NavLink activeClassName="active" className="BottomNavItem bottommenu-globe" to="/futureclimate">
+      <NavLink activeClassName="active" className="BottomNavItem bottommenu-house" to="/futureclimate">
           <FontAwesomeIcon icon={faHome} />
         </NavLink>
         <NavLink activeClassName="active" className="BottomNavItem" to="/fossilfuels">
@@ -40,4 +47,5 @@ function BottomMenu() {
   );
 }
 
+/*Exporterar*/
 export default BottomMenu;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
-import "../App.css";
+import "../Style/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { UserScoreContext } from "../App";
 import questionsArray from "../Quiz/questions.json";

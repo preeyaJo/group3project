@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./App.css";
+import "./Style/App.css";
 import "./Quiz/quiz.css";
 import Start from "./Views/Start";
 import FutureClimate from "./Views/FutureClimate";

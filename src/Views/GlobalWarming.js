@@ -1,6 +1,10 @@
+/*Importerar komponenter */
 import React, { useEffect, useState } from "react";
-import "../App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
+/*Importerar komponenter */
+import "../Style/App.css";
+
+/*Importerar komponenter */
 import BottomMenu from "../Components/BottomMenu";
 import GlobalHeader from "../Components/GlobalHeader";
 import Chart from "../Components/Chart";
@@ -36,6 +40,7 @@ export function GlobalWarming() {
 
   return (
     <div>
+      {/*Toppmeny*/}
       <GlobalHeader />
     <div className="container extraSpacing">
       
@@ -44,9 +49,11 @@ export function GlobalWarming() {
       <Chart Category="globaltemperature" type="bar" data={data} />
       
     </div>
+    {/*Bottenmeny*/}
     <BottomMenu />
     </div>
   );
 }
 
+/*Exporterar*/
 export default GlobalWarming;
