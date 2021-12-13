@@ -4,7 +4,6 @@
 
 
 .App-header {
-  padding: 60px 0 43px 0;
   background-color: #e1e6dd;
   min-height: 100vh;
   display: flex;
@@ -13,10 +12,21 @@
   font-size: calc(8px + 2vmin);
   color: white;
 }
-
+.GlobalHeader{
+  background-color: #184e77;
+  height: 90px;
+}
+.GlobalHeaderText{
+  font-size: 25px;
+}
 .BottomMenu {
   background-color: #184e77;
   padding: 0px 10px 0px 10px;
+  height: 90px;
+}
+.extraSpacing{
+  margin-bottom: 7em;
+
 }
 /* Sätt till samma höjd som bottenmenyn i de andra Vy's */
 .FutureBottom {
@@ -49,6 +59,9 @@
 .BottomNavItem:hover {
   color: #e1e6dd;
 }
+.TopNavItem:hover {
+  color: #e1e6dd;
+}
 
 .active {
   border-bottom: 3px solid white;
@@ -77,6 +90,10 @@
   font-size: 14px;
 }
 
+.errorMassage{
+  color: black;
+}
+
 .startButton {
   background-color: #716595 !important;
   font-weight: bold !important;
@@ -84,7 +101,19 @@
   border: #5a5077 !important;
   padding-left: 2em !important;
   padding-right: 2em !important;
+  
 }
+.centerButton{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.h2Start{
+  color: #707070 !important;
+  font-size: 20px !important;
+}
+
 
 .group3 {
   color: #707070;

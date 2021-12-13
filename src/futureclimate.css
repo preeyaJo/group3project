@@ -29,7 +29,9 @@
   @media only screen and (min-width: 300px) {
  
     .timeline-text-top {
-      text-align: left;
+      text-align: left !important;
+      color: white;
+      font-weight: bold;
       font-size: 1.6em;
       grid-column-start: 1;
       grid-column-end: 1;

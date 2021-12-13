@@ -1,50 +1,110 @@
 [
   {
-    "questionText": "What is the capital of France?",
+    "questionText": "Vad bidrar mest till ozonlagrets förstörelse?",
     "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
     "answerOptions": [
-      { "answerText": "New York", "isCorrect": false },
-      { "answerText": "London", "isCorrect": false },
-      { "answerText": "Paris", "isCorrect": true },
-      { "answerText": "Dublin", "isCorrect": false },
-      { "answerText": "Stockholm", "isCorrect": false }
+      { "answerText": "Elbilar", "isCorrect": false },
+      { "answerText": "Vatten", "isCorrect": false },
+      { "answerText": "Fossila bränslen", "isCorrect": true }
     ]
   },
   {
-    "questionText": "Who is CEO of Tesla?",
+    "questionText": "Vad är ozonlagret bra för?",
     "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
     "answerOptions": [
-      { "answerText": "Elon Musk", "isCorrect": true },
-      { "answerText": "Bill Gates", "isCorrect": false },
-      { "answerText": "Tony Stark", "isCorrect": false }
+      {
+        "answerText": "Skyddar mot solens skadliga strålar",
+        "isCorrect": true
+      },
+      { "answerText": "Släpper in kväve i vår atmosfär", "isCorrect": false },
+      { "answerText": "Öka regnet i världen", "isCorrect": false }
     ]
   },
   {
-    "questionText": "Bananas are seeds?",
+    "questionText": "Hur många grader har den globala temperaturen ökat?",
     "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
     "answerOptions": [
-      { "answerText": "Yes, correct", "isCorrect": true },
-      { "answerText": "No, fruits", "isCorrect": false }
+      { "answerText": "1-2 grader", "isCorrect": true },
+      { "answerText": "5-6 grader", "isCorrect": false },
+      { "answerText": "3-4 grader", "isCorrect": false }
     ]
   },
   {
-    "questionText": "The iPhone was created by which company?",
+    "questionText": "Vad är den ökade temperaturens konsekvenser?",
     "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
     "answerOptions": [
-      { "answerText": "Apple", "isCorrect": true },
-      { "answerText": "Intel", "isCorrect": false },
-      { "answerText": "Amazon", "isCorrect": false },
-      { "answerText": "Microsoft", "isCorrect": false }
+      {
+        "answerText": "Värmeböljor blir mer vanligt i mellanöstern",
+        "isCorrect": true
+      },
+      {
+        "answerText": "Mer regn i världen och ovanligt tropiskt klimat",
+        "isCorrect": false
+      },
+      { "answerText": "Djur ändras på en atomisk nivå ", "isCorrect": false }
     ]
   },
   {
-    "questionText": "How many Harry Potter books are there?",
+    "questionText": " Hur kan du minska din påverkan på den globala temperaturen?",
     "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
     "answerOptions": [
-      { "answerText": "1", "isCorrect": false },
-      { "answerText": "4", "isCorrect": false },
-      { "answerText": "6", "isCorrect": false },
-      { "answerText": "7", "isCorrect": true }
+      { "answerText": "Äta mer kött", "isCorrect": false },
+      { "answerText": "Handla mer kläder", "isCorrect": false },
+      { "answerText": "Åka elbil och äta mer vegetariskt", "isCorrect": true }
+    ]
+  },
+  {
+    "questionText": "Ökar eller minskar havsnivån?",
+    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "answerOptions": [
+      { "answerText": "Den ökar", "isCorrect": true },
+      { "answerText": "Den minskar", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Vad leder den ökade havsnivån till?",
+    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "answerOptions": [
+      {
+        "answerText": "Förstörda städer som sakta sjunker under havsnivån",
+        "isCorrect": true
+      },
+      { "answerText": "Fiskarna förökar sig mer", "isCorrect": false },
+      { "answerText": "Korallreven återhämtar sig", "isCorrect": false }
+    ]
+  },
+  {
+    "questionText": "Varför höjs havsnivån?",
+    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "answerOptions": [
+      { "answerText": "Det regnar mer", "isCorrect": false },
+      { "answerText": "Glaciärerna smälte", "isCorrect": true }
+    ]
+  },
+  {
+    "questionText": "Varför är stormar och orkaner farliga?",
+    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "answerOptions": [
+      { "answerText": "Ekosystemet rubbas", "isCorrect": false },
+      { "answerText": "Kan förstöra hus och natur", "isCorrect": true }
+    ]
+  },
+  {
+    "questionText": "Vad händer när glaciärerna har smält?",
+    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "answerOptions": [
+      {
+        "answerText": "Vi har hav överallt utan tillgång till land",
+        "isCorrect": false
+      },
+      {
+        "answerText": "Vi kommer ha svår tillgång till färskvatten",
+        "isCorrect": true
+      },
+      {
+        "answerText": "Vi kommer ha mer tillgång till spannmål",
+        "isCorrect": false
+      }
     ]
   }
 ]

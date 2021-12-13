@@ -42,12 +42,16 @@ export function SeaLevels() {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <GlobalHeader />
+    <div className="container">
+      
       <InfoCard Category="sealevels"/>
       {/*Skriver ut vilken typ av charts som ska visas*/}
       <Chart Category="sealevels" type="bar" data={data} />
-      <BottomMenu />
+      
+    </div>
+    <BottomMenu />
     </div>
   );
 }

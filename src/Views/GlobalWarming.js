@@ -35,12 +35,16 @@ export function GlobalWarming() {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <GlobalHeader />
+    <div className="container">
+      
       <InfoCard Category="globaltemperature"/>
       {/*Skriver ut vilken typ av charts som ska visas*/}
       <Chart Category="globaltemperature" type="bar" data={data} />
-      <BottomMenu />
+      
+    </div>
+    <BottomMenu />
     </div>
   );
 }

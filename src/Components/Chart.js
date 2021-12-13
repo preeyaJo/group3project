@@ -42,7 +42,6 @@ export function Chart(props) {
         
     }, [props,data]);
 
-
     return (
         <div className="card p-3">
             <h3>{data.heading}</h3>

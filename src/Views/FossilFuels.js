@@ -60,12 +60,14 @@ export function FossilFuels() {
   }, []);
 
   return (
-    <div className="container">
-      <GlobalHeader />
+    <div>
+    <GlobalHeader />
+    <div className="container extraSpacing">
+      
       <InfoCard Category="fossilfuels"/>
-      {/*Skriver ut vilken typ av charts som ska visas*/}
-      <Chart Category="fossilfuels" type="line" data={data} /> 
-      <BottomMenu /> 
+      <Chart Category="fossilfuels" type="line" data={data} />
+    </div>
+    <BottomMenu />
     </div>
   );
 }

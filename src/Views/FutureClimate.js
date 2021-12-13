@@ -3,10 +3,7 @@ import "../futureclimate.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowCircleRight,
-  faLongArrowAltDown,
-} from "@fortawesome/free-solid-svg-icons";
+import {faArrowCircleRight} from "@fortawesome/free-solid-svg-icons";
 
 import { Link } from "react-router-dom";
 
@@ -15,29 +12,24 @@ import FutureListItems from "../Components/FutureListItems";
 export function FutureClimate() {
   return (
     <div>
-      <Navbar className="BottomMenu justify-content-center" fixed="top">
-        {" "}
+      <Navbar className="GlobalHeader justify-content-center">
         {/*Toppmeny*/}
-        <h1 className="">
-          Vår framtid{" "}
-          <FontAwesomeIcon icon={faLongArrowAltDown}></FontAwesomeIcon>
+        <h1 className="GlobalHeaderText">
+          Vår framtid:
         </h1>
       </Navbar>
       <section className="content-futureclimate">
         <FutureListItems />
         {/*Timeline*/}
       </section>
+
+       {/*Bottenmeny*/}
       <Navbar
-        className="BottomMenu FutureBottom justify-content-center"
-        fixed="bottom"
-      >
-        {" "}
-        {/*Bottenmeny*/}
+        className="BottomMenu FutureBottom justify-content-center">
         <Link className="button-to-cctopics" to="/fossilfuels">
-          {" "}
-          {/*Knapp til CCTopics*/}
-          Så löser vi det{" "}
-          <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon>
+          {/*Knapp til Ämnen*/}
+          <div className="GlobalHeaderText"> Så löser vi det {" "}
+          <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon></div>
         </Link>
       </Navbar>
     </div>
