@@ -4,12 +4,12 @@
   /*  box-shadow: 0 0px 30px rgba(0, 0, 50, 0.3), 0 0 40px rgba(0, 0, 0, 0.2) inset; */
 }
 .quizImage {
-  max-width: 400px;
+  width: 100%;
 }
 .Show-score {
   text-align: center;
-  margin: 15%;
-  padding: 15% 0;
+  margin: 4em;
+  padding: 3em;
   border: #5a5077 1px solid;
 }
 .blue {
