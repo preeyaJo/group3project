@@ -30,11 +30,15 @@ export function GlobalWarming() {
   }, []);
 
   return (
-    <div className="container">
+    <div>
       <GlobalHeader />
+    <div className="container">
+      
       <InfoCard Category="globaltemperature"/>
       <Chart Category="globaltemperature" type="bar" data={data} />
-      <BottomMenu />
+      
+    </div>
+    <BottomMenu />
     </div>
   );
 }

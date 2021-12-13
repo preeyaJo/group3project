@@ -54,11 +54,14 @@ export function FossilFuels() {
   }, []);
 
   return (
-    <div className="container">
-      <GlobalHeader />
+    <div>
+    <GlobalHeader />
+    <div className="container extraSpacing">
+      
       <InfoCard Category="fossilfuels"/>
       <Chart Category="fossilfuels" type="line" data={data} />
-      <BottomMenu />
+    </div>
+    <BottomMenu />
     </div>
   );
 }

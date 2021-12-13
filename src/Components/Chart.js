@@ -24,7 +24,7 @@ const ChartHeadingarray = [
 
 export function Chart(props) {
 
-    const  data = ChartHeadingarray.find(p=>p.category == props.Category);
+    const  data = ChartHeadingarray.find(p=>p.category === props.Category);
 
     useEffect(() => {
         const ctx = document.getElementById('chart').getContext('2d');
@@ -38,7 +38,7 @@ export function Chart(props) {
             chart.destroy()
         }
         
-    }, [props.data]);
+    }, [props,data]);
 
     return (
         <div className="card p-3">

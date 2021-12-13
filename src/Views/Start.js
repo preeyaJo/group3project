@@ -43,7 +43,7 @@ export function Start() {
       
     /* If the user data is incorrect, try again */  
     } else {
-      setError("Felaktiga inloggningsuppgifter");
+      setError(<p className="errorMassage">Felaktiga inloggningsuppgifter</p>);
       
     }
   }
