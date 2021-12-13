@@ -17,7 +17,7 @@ import {
 function GlobalHeader() {
   const history = useHistory();
   return (
-    <Navbar className="GlobalHeader">
+    <Navbar className="GlobalHeader" fixed="top">
       <Container>
         <Router>
           {/* Tillbakaknapp till tidigare view. */}

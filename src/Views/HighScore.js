@@ -45,8 +45,8 @@ export function HighScore() {
   return (
     <div className="container">
       <GlobalHeader />
-      <div className="Show-score QuizItem rounded text-center text-secondary d-flex flex-column justify-content-center align-items-center">
-        <h1 className="mb-4">Highscore</h1>
+      <div className="borderPruple Show-score QuizItem rounded text-center text-secondary d-flex flex-column justify-content-center align-items-center">
+        <h2 className="mb-4">Highscore</h2>
         {showHighScore}
 
         <Link to="/quiz">

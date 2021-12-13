@@ -11,14 +11,20 @@ import QuizList from "../Quiz/QuizItem"; /* skall döpas om till QuizItem.js */
 
 export function Quiz() {
   return (
-    <div className="container">
+    <div  className="container quizFix">
       <GlobalHeader />
+    <div>
+      
       <QuizList />
-      {/*Komponent för bottenmeny*/}
-      <BottomMenu />
+      
+      
       {/*       <Link to="/result">
         <Button className="m-3">Resultat</Button>
       </Link> */}
+
+    </div>
+    {/*Komponent för bottenmeny*/}
+    <BottomMenu />
     </div>
   );
 }

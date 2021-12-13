@@ -12,6 +12,11 @@
   font-size: calc(8px + 2vmin);
   color: white;
 }
+
+p{
+  font-size: 14px;
+}
+
 .GlobalHeader{
   background-color: #184e77;
   height: 90px;
@@ -25,6 +30,7 @@
   height: 90px;
 }
 .extraSpacing{
+  margin-top: 7em;
   margin-bottom: 7em;
 
 }
@@ -121,4 +127,27 @@
 
 .groupNames3 {
   font-size: 14px;
+}
+
+
+/* Info view */
+.infoText{
+  color: black;
+  text-align: left;
+}
+
+.infoContact{
+  border: 2px solid #716595;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1em;
+}
+
+.borderPruple{
+  border: 2px solid #716595 !important;
+  border-radius: 5px !important;
+}
+
+.quizFix{
+  width: auto;
 }
