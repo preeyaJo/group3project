@@ -1,7 +1,7 @@
 [
   {
     "questionText": "Vad bidrar mest till ozonlagrets förstörelse?",
-    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "quizImage": "https://images.unsplash.com/photo-1588011930968-eadac80e6a5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80",
     "answerOptions": [
       { "answerText": "Elbilar", "isCorrect": false },
       { "answerText": "Vatten", "isCorrect": false },
@@ -10,7 +10,7 @@
   },
   {
     "questionText": "Vad är ozonlagret bra för?",
-    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "quizImage": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
     "answerOptions": [
       {
         "answerText": "Skyddar mot solens skadliga strålar",
@@ -22,7 +22,7 @@
   },
   {
     "questionText": "Hur många grader har den globala temperaturen ökat?",
-    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "quizImage": "https://images.unsplash.com/photo-1610557013547-dc7a52d44709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80",
     "answerOptions": [
       { "answerText": "1-2 grader", "isCorrect": true },
       { "answerText": "5-6 grader", "isCorrect": false },
@@ -31,7 +31,7 @@
   },
   {
     "questionText": "Vad är den ökade temperaturens konsekvenser?",
-    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "quizImage": "https://images.unsplash.com/photo-1516537219851-920e2670c6e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80",
     "answerOptions": [
       {
         "answerText": "Värmeböljor blir mer vanligt i mellanöstern",
@@ -46,7 +46,7 @@
   },
   {
     "questionText": " Hur kan du minska din påverkan på den globala temperaturen?",
-    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "quizImage": "https://images.unsplash.com/photo-1488134684157-fea2d81a5ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80",
     "answerOptions": [
       { "answerText": "Äta mer kött", "isCorrect": false },
       { "answerText": "Handla mer kläder", "isCorrect": false },
@@ -55,7 +55,7 @@
   },
   {
     "questionText": "Ökar eller minskar havsnivån?",
-    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "quizImage": "https://images.unsplash.com/photo-1439405326854-014607f694d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
     "answerOptions": [
       { "answerText": "Den ökar", "isCorrect": true },
       { "answerText": "Den minskar", "isCorrect": false }
@@ -63,7 +63,7 @@
   },
   {
     "questionText": "Vad leder den ökade havsnivån till?",
-    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "quizImage": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
     "answerOptions": [
       {
         "answerText": "Förstörda städer som sakta sjunker under havsnivån",
@@ -75,7 +75,7 @@
   },
   {
     "questionText": "Varför höjs havsnivån?",
-    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "quizImage": "https://images.unsplash.com/photo-1576637222197-0b3b94404f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1881&q=80",
     "answerOptions": [
       { "answerText": "Det regnar mer", "isCorrect": false },
       { "answerText": "Glaciärerna smälte", "isCorrect": true }
@@ -83,7 +83,7 @@
   },
   {
     "questionText": "Varför är stormar och orkaner farliga?",
-    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "quizImage": "https://images.unsplash.com/photo-1516490981167-dc990a242afe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
     "answerOptions": [
       { "answerText": "Ekosystemet rubbas", "isCorrect": false },
       { "answerText": "Kan förstöra hus och natur", "isCorrect": true }
@@ -91,18 +91,18 @@
   },
   {
     "questionText": "Vad händer när glaciärerna har smält?",
-    "quizImage": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+    "quizImage": "https://images.unsplash.com/photo-1447655513720-7da85ed1fa57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
     "answerOptions": [
       {
-        "answerText": "Vi har hav överallt utan tillgång till land",
+        "answerText": "Hav överallt utan tillgång till land",
         "isCorrect": false
       },
       {
-        "answerText": "Vi kommer ha svår tillgång till färskvatten",
+        "answerText": "Svår tillgång till färskvatten",
         "isCorrect": true
       },
       {
-        "answerText": "Vi kommer ha mer tillgång till spannmål",
+        "answerText": "Mer tillgång till spannmål",
         "isCorrect": false
       }
     ]
