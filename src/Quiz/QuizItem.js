@@ -57,8 +57,8 @@ function QuizList() {
   return (
     <div>
       {showScore ? (
-        <div className="Show-score QuizItem rounded text-center d-flex flex-column justify-content-center align-items-center">
-          <h2 className="text-secondary">
+        <div className="borderPruple Show-score QuizItem rounded text-center d-flex flex-column justify-content-center align-items-center">
+          <h2>
             Du fick {score} av {nrOfQuestions} rätt
           </h2>
           <div>
@@ -86,11 +86,11 @@ function QuizList() {
             alt="A pointy tower"
             className=" my-3 quizImage"
           />
-          <h2 className="">
+          <h2>
             Fråga {currentQuestion + 1}
             <span className="nrOfQuestions"> /{nrOfQuestions}</span>
           </h2>
-          <div className="py-3">
+          <div>
             <p>{questionsArray[currentQuestion].questionText}</p>
           </div>
           <div className="d-flex flex-column justify-content-center ">

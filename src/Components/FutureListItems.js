@@ -50,8 +50,8 @@ const futureListArray = [
 ];
 
 function FutureListItems() {
-  return futureListArray.map((futurelist) => (
-    <section key={futurelist.index}>
+  return futureListArray.map((futurelist, index) => (
+    <section key={index}>
 
       <img className="timeline-image" src={futurelist.image} alt="" />
       <h2 className="timeline-text-top">{futurelist.year}</h2>

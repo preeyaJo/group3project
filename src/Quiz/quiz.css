@@ -4,12 +4,37 @@
   /*  box-shadow: 0 0px 30px rgba(0, 0, 50, 0.3), 0 0 40px rgba(0, 0, 0, 0.2) inset; */
 }
 .quizImage {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; /* width of container */
+  height: 140px;
+  object-fit: cover;
+  border-radius: 5px;
 }
+
+@media (min-width: 414px){
+  .quizImage {
+    height: 200px;
+  }
+}
+
+@media (min-width: 511px){
+  .quizImage {
+    height: 200px;
+  }
+}
+@media (min-height: 1025px){
+  .quizImage {
+    height: 100% !important;
+  }
+}
+
 .Show-score {
   text-align: center;
-  margin: 4em;
-  padding: 3em;
+  margin: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   border: #5a5077 1px solid;
 }
 .blue {

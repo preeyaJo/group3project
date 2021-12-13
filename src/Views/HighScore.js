@@ -46,7 +46,7 @@ export function HighScore() {
     <div className="container">
       <GlobalHeader />
       <div className="borderPruple Show-score QuizItem rounded text-center text-secondary d-flex flex-column justify-content-center align-items-center">
-        <h2 className="mb-4">Highscore</h2>
+        <h2>Highscore</h2>
         {showHighScore}
 
         <Link to="/quiz">

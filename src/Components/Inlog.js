@@ -63,7 +63,7 @@ export function Inlog({Login, error}) {
 
         </div>
 
-<div className="group3">
+        <div className="group3">
         <h2 className="h2Start">En app av Grupp 3</h2>
         <div className="groupNames3">
           <p>

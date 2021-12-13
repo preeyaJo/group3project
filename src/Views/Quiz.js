@@ -11,9 +11,9 @@ import QuizList from "../Quiz/QuizItem"; /* skall döpas om till QuizItem.js */
 
 export function Quiz() {
   return (
-    <div  className="container quizFix">
+    <div  className="container">
       <GlobalHeader />
-    <div>
+    <div className="quizFix">
       
       <QuizList />
       

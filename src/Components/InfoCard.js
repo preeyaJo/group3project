@@ -61,18 +61,18 @@ const infoCardArray = [
 
     return (
   
-  <div className=" mb-3">
+  <div className="">
         <div className="col infocard">
           <img className="card-img-top" src={data.image} alt=""/>
         </div>
         <div className="col">
           <div className="card-body">
-            <p className="card-text">
-              <div className="text-infocard">{data.info1}</div><br/>
-              <div className="heading-infocard"><strong>{data.heading}</strong></div>
-              <div className="text-infocard">{data.info2}</div><br/>
-              <div className="text-infocard">{data.info3}</div><br/>
-            </p>
+            <div className="card-text">
+              <p className="text-infocard">{data.info1}</p><br/>
+              <p className="heading-infocard"><strong>{data.heading}</strong></p>
+              <p className="text-infocard">{data.info2}</p><br/>
+              <p className="text-infocard">{data.info3}</p><br/>
+            </div>
         </div>
       </div>
     </div>

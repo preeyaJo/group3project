@@ -12,26 +12,43 @@
   font-size: calc(8px + 2vmin);
   color: white;
 }
+h1{
+  font-family: 'ABeeZee', sans-serif;
+}
+h2{
+  font-family: 'ABeeZee', sans-serif;
+}
 
 p{
   font-size: 14px;
+  color: black;
+  text-align: left !important;
+  font-family: 'ABeeZee', sans-serif;
 }
 
 .GlobalHeader{
   background-color: #184e77;
-  height: 90px;
+  padding: 0px 10px 0px 10px;
+  height: 70px;
 }
 .GlobalHeaderText{
-  font-size: 25px;
+  font-size: 20px;
+  font-family: 'ABeeZee', sans-serif;
 }
 .BottomMenu {
   background-color: #184e77;
   padding: 0px 10px 0px 10px;
-  height: 90px;
+  height: 70px;
 }
-.extraSpacing{
-  margin-top: 7em;
-  margin-bottom: 7em;
+
+@media (min-height: 1024px){
+  .BottomMenu {
+    height: 90px !important;
+  }
+
+}.extraSpacing{
+  margin-top: 5em;
+  margin-bottom: 6em;
 
 }
 /* Sätt till samma höjd som bottenmenyn i de andra Vy's */
@@ -41,19 +58,18 @@ p{
 
 .BottomNavItem {
   color: #ffffff;
-  padding: 10px;
 }
 
 .TopNavItem {
   color: #ffffff;
-  padding: 10px;
 }
 
 .bottom-dice {
   font-size: 1.5em;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1.5px solid #c8c8c8;
-  padding: 5px !important ;
+  padding-left: 5px !important ;
+  padding-right: 5px !important ;
 }
 
 @media only screen and (min-width: 700px) {
@@ -107,6 +123,7 @@ p{
   border: #5a5077 !important;
   padding-left: 2em !important;
   padding-right: 2em !important;
+  font-family: 'ABeeZee', sans-serif;
   
 }
 .centerButton{
@@ -121,8 +138,10 @@ p{
 }
 
 
-.group3 {
-  color: #707070;
+.group3 p {
+  color: #707070 !important;
+  text-align: center !important;
+
 }
 
 .groupNames3 {
@@ -141,6 +160,7 @@ p{
   border-radius: 5px;
   text-align: center;
   padding: 1em;
+  margin-top: 3em;
 }
 
 .borderPruple{
@@ -149,5 +169,6 @@ p{
 }
 
 .quizFix{
-  width: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }

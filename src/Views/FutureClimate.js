@@ -14,7 +14,7 @@ export function FutureClimate() {
     <div>
       <Navbar className="GlobalHeader justify-content-center">
         {/*Toppmeny*/}
-        <h1 className="GlobalHeaderText">
+        <h1 >
           Vår framtid:
         </h1>
       </Navbar>
