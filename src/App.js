@@ -20,7 +20,7 @@ export const UserScoreContext = React.createContext("");
 
 function App() {
   //testar state för att dela en const mellan quiz och high-score
-  const [scoreContext, setScoreContext] = useState("0");
+  const [scoreContext, setScoreContext] = useState(0);
 
   return (
     <div className="App">

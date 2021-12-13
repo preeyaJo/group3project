@@ -7,13 +7,13 @@ import { Link } from "react-router-dom";
 
 import Button from "react-bootstrap/Button"; */
 import GlobalHeader from "../Components/GlobalHeader";
-import QuizList_a from "../Quiz/QuizItem_a"; /* skall döpas om till QuizItem.js */
+import QuizList from "../Quiz/QuizItem"; /* skall döpas om till QuizItem.js */
 
 export function Quiz() {
   return (
     <div className="container">
       <GlobalHeader />
-      <QuizList_a />
+      <QuizList />
       {/*Komponent för bottenmeny*/}
       <BottomMenu />
       {/*       <Link to="/result">
