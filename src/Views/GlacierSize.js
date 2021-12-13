@@ -46,7 +46,7 @@ export function GlacierSize() {
   return (
     <div>
       <GlobalHeader />
-    <div className="container">
+    <div className="container extraSpacing">
       
       <InfoCard Category="glaciersize"/>
       {/*Skriver ut vilken typ av charts som ska visas*/}

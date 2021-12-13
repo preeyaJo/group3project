@@ -44,7 +44,7 @@ export function SeaLevels() {
   return (
     <div>
       <GlobalHeader />
-    <div className="container">
+    <div className="container extraSpacing">
       
       <InfoCard Category="sealevels"/>
       {/*Skriver ut vilken typ av charts som ska visas*/}

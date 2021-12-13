@@ -7,7 +7,7 @@ Chartjs.register(...registerables);
 const ChartHeadingarray = [
     {
       category: "fossilfuels",
-      heading: "Fossila bränslens ökning i metrisk ton från 1951-2006"
+      heading: "Fossila bränslens ökning i metrisk ton från 1951-2008"
     },
     {
         category: "globaltemperature",

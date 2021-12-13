@@ -65,6 +65,7 @@ export function FossilFuels() {
     <div className="container extraSpacing">
       
       <InfoCard Category="fossilfuels"/>
+       {/*Skriver ut vilken typ av charts som ska visas*/}
       <Chart Category="fossilfuels" type="line" data={data} />
     </div>
     <BottomMenu />
