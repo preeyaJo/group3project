@@ -6,37 +6,43 @@ import GlobalHeader from "../Components/GlobalHeader";
 import Chart from "../Components/Chart";
 import InfoCard from "../Components/InfoCard";
 
+/*Function för att hämta och skriva ut API från jsonfil*/
 export function FossilFuels() {
   const [data, setData] = useState({});
   useEffect(() => {
     fetch("data/GlobalCo.json")
       .then((response) => response.json())
       .then((res) => {
+       /*Filtrering av årtal så det begränsas*/
         res = res.filter((x) => x.Year > 1950);
         let gasFlaring = {
-          label: "Gas Flaring",
+          label: "Gasledning",
           data: [],
           backgroundColor: "#CC7B79",
         };
         let gasFuel = {
-          label: "Gas Fuel",
+          label: "Gasbränsle",
           data: [],
           backgroundColor: "#AE94CB",
         };
         let liquidFuel = {
-          label: "Liquid Fuel",
+          label: "Flytande bränsle",
           data: [],
           backgroundColor: "#4C7FB2",
         };
         let solidFuel = {
-          label: "Solid Fuel",
+          label: "Fast bränsle",
           data: [],
           backgroundColor: "#59A57F",
         };
-        let cement = { label: "Cement", data: [], backgroundColor: "#ABD4A4" };
+        let cement = { 
+          label: "Cement", 
+          data: [], 
+          backgroundColor: "#ABD4A4" 
+        };
 
         let labels = [];
-
+        /*Pushar ut data för varje ämne och årtal*/
         res.forEach((year) => {
           labels.push(year.Year);
           gasFlaring.data.push(year["Gas Flaring"]);
@@ -45,7 +51,7 @@ export function FossilFuels() {
           solidFuel.data.push(year["Solid Fuel"]);
           cement.data.push(year["Cement"]);
         });
-
+        /*Lagrar datan för alla labels och datasets/ämnen*/
         setData({
           labels: labels,
           datasets: [gasFlaring, gasFuel, liquidFuel, solidFuel, cement],
@@ -57,8 +63,9 @@ export function FossilFuels() {
     <div className="container">
       <GlobalHeader />
       <InfoCard Category="fossilfuels"/>
-      <Chart Category="fossilfuels" type="line" data={data} />
-      <BottomMenu />
+      {/*Skriver ut vilken typ av charts som ska visas*/}
+      <Chart Category="fossilfuels" type="line" data={data} /> 
+      <BottomMenu /> 
     </div>
   );
 }
