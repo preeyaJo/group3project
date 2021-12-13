@@ -12,6 +12,7 @@
 .card-text .text-infocard {
     color: #000000;
     text-align: left !important;
+    font-size: 0.9em;
 }
 
 /*Style på cardens rubrik*/
