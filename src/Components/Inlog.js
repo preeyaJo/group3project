@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 /* Import style */
-import "../App.css";
+import "../Style/App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* Import icons */

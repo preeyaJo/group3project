@@ -1,8 +1,9 @@
+/*Centrerar all text i applikationen*/
 .App {
   text-align: center;
 }
 
-
+/*Generell style på applikationen*/
 .App-header {
   background-color: #e1e6dd;
   min-height: 100vh;
@@ -12,6 +13,8 @@
   font-size: calc(8px + 2vmin);
   color: white;
 }
+
+/*Sätter font-family på rubriker*/
 h1{
   font-family: 'ABeeZee', sans-serif;
 }
@@ -19,6 +22,7 @@ h2{
   font-family: 'ABeeZee', sans-serif;
 }
 
+/*Style på p-element*/
 p{
   font-size: 14px;
   color: black;
@@ -26,27 +30,35 @@ p{
   font-family: 'ABeeZee', sans-serif;
 }
 
+/*Style på globala header på alla views*/
 .GlobalHeader{
   background-color: #184e77;
   padding: 0px 10px 0px 10px;
   height: 70px;
 }
+
+/*Style på globala headers text på alla views*/
 .GlobalHeaderText{
   font-size: 20px;
   font-family: 'ABeeZee', sans-serif;
 }
+
+/*Style på bottenmenyn på alla views*/
 .BottomMenu {
   background-color: #184e77;
   padding: 0px 10px 0px 10px;
   height: 70px;
 }
 
+/*Gör bottenmenyn responsiv*/
 @media (min-height: 1024px){
   .BottomMenu {
     height: 90px !important;
   }
 
-}.extraSpacing{
+}
+/*Extra margin*/
+.extraSpacing{
   margin-top: 5em;
   margin-bottom: 6em;
 
@@ -56,14 +68,17 @@ p{
   height: 72px;
 }
 
+/*Ikonerna i bottenmenyn*/
 .BottomNavItem {
   color: #ffffff;
 }
 
+/*Ikonerna i global header*/
 .TopNavItem {
   color: #ffffff;
 }
 
+/*Style på quiz-ikon*/
 .bottom-dice {
   font-size: 1.5em;
   border-radius: 5px;
@@ -72,12 +87,16 @@ p{
   padding-right: 5px !important ;
 }
 
+/*Gör responsiv*/
 @media only screen and (min-width: 700px) {
 }
-.bottommenu-globe {
+
+/*Storlek på hem-ikonen*/
+.bottommenu-house {
   font-size: 1.3em;
 }
 
+/*Hover i responsivt läge*/
 .BottomNavItem:hover {
   color: #e1e6dd;
 }
@@ -85,6 +104,7 @@ p{
   color: #e1e6dd;
 }
 
+/*Style på aktiva länkar*/
 .active {
   border-bottom: 3px solid white;
 }
@@ -94,6 +114,7 @@ p{
   color: #e1e6dd;
 }
 
+/*Style på start*/
 .startHeader {
   color: #716595;
   font-weight: bold;
@@ -106,16 +127,19 @@ p{
   margin: 15px;
 }
 
+/*Style på logga in-fält*/
 .loginForm {
   color: #707070;
   text-align: left;
   font-size: 14px;
 }
 
+/*Style på felmeddelande*/
 .errorMassage{
   color: black;
 }
 
+/*Style på start-knapp*/
 .startButton {
   background-color: #716595 !important;
   font-weight: bold !important;
@@ -126,12 +150,15 @@ p{
   font-family: 'ABeeZee', sans-serif;
   
 }
+
+/*Centrerar knapp*/
 .centerButton{
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
 }
 
+/*Style på rubriker och p på start-view*/
 .h2Start{
   color: #707070 !important;
   font-size: 20px !important;

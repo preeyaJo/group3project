@@ -4,7 +4,7 @@ import React from "react";
 
 
 /* Import internal sources */
-import "../App.css";
+import "../Style/App.css";
 import "../Info.css";
 import GlobalHeader from "../Components/GlobalHeader";
 import BottomMenu from "../Components/BottomMenu";

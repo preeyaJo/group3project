@@ -1,3 +1,4 @@
+/*Style på card för kategoriernas information*/
 .card {
     font-size: 1em;
     overflow: hidden;
@@ -7,23 +8,30 @@
     box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
 }
 
+/*Style på cardens text*/
 .card-text .text-infocard {
     color: #000000;
     text-align: left !important;
+    font-size: 0.9em;
 }
 
+/*Style på cardens rubrik*/
 .heading-infocard {
     font-size: 0.96em;
     text-align: left !important;
     color: #000000;
     margin-bottom: 5px;
 }
+
+/*Style på cardens bilder*/
 .card-img-top {
     width: 100%;
 }
 
+/*Style på h3 rubrik för diagram*/
 h3 {
     color: #000000;
     font-size: 1.1em;
     margin-bottom: 15px;
+    font-family: 'ABeeZee', sans-serif;
 }
