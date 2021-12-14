@@ -13,18 +13,18 @@
   border-radius: 5px;
 }
 
-@media (min-width: 414px){
+@media (min-width: 414px) {
   .quizImage {
     height: 200px;
   }
 }
 
-@media (min-width: 511px){
+@media (min-width: 511px) {
   .quizImage {
     height: 200px;
   }
 }
-@media (min-height: 1025px){
+@media (min-height: 1025px) {
   .quizImage {
     height: 100% !important;
   }
