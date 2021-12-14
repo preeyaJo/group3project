@@ -1,44 +1,44 @@
-/* Import state from react */
+/* Importerar state från react */
 import React, { useState } from "react";
 
-/* Import style */
+/* Importerar CSS/style */
 import "../Style/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-/* Import React Router Dom */
+/* Importerar React Router Dom */
 import { Redirect } from "react-router-dom";
 
-/* Import components */
+/* Importerar komponenter */
 import Inlog from "../Components/Inlog";
 
 import { UserScoreContext } from "../App";
 
-/* Start function for inlog */
+/* Funktion för inlog */
 export function Start() {
   /***** Script area *****/
 
   // hämtar tillgång till global variabel för att skicka användarnamn till Highscore.js //Christian
   const { scoreContext, setScoreContext } = React.useContext(UserScoreContext);
 
-  /* Set data to user */
+  /* Personuppgifter för inloggning. Går att lägga i en egen JSON om man vill bygga vidare */
   const adminUser = {
     name: "Anna",
     userID: "Anna2022",
     password: "anna123",
   };
 
-  /* State to login */
+  /* State till login */
   const [user, setUser] = useState({ userID: "" });
   const [error, setError] = useState("");
 
-  /* Function for login in */
+  /* Funktion för login */
   const Login = (details) => {
-    /* Checks if the user input data is correct to adminUser */
+    /* Kollar om datan från input är korrekt med adminUser */
     if (
       details.userID === adminUser.userID &&
       details.password === adminUser.password
     ) {
-      /* set details to state */
+      /* sätter details till state */
       setUser({
         userID: details.userID,
       });
@@ -46,17 +46,15 @@ export function Start() {
       // Vid korrekt inloggning lagrar vi useID i context för att använda i Highscore.js //Christian
       setScoreContext({ score: scoreContext.score, namn: details.userID });
 
-      /* If the user data is incorrect, try again */
+      /* Om inmatad data är inkorrekt, skriv ut error- meddelande */
     } else {
       setError(<p className="errorMassage">Felaktiga inloggningsuppgifter</p>);
     }
   };
 
-  /***** Output area *****/
-
   return (
     <div>
-      {/* Change path when inlog data is correct */}
+      {/* Ändra path/view vid korrekta inloggningsuppgifter */}
       {user.userID !== "" ? (
         <div>
           <Redirect to="/futureclimate"></Redirect>
@@ -68,5 +66,5 @@ export function Start() {
   );
 }
 
-/***** Send component content *****/
+/***** Exportera komponent *****/
 export default Start;

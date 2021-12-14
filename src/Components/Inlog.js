@@ -1,21 +1,23 @@
-/* Import State from React */
+/* Importerar State från React */
 import React, { useState } from "react";
 
-/* Import style */
+/* Importerar CSS/style */
 import "../Style/App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-/* Import icons */
+/* Importerar ikoner */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
 
-/* Import Bootstrap */
+/* Importerar Bootstrap */
 import Form from "react-bootstrap/Form";
 import Stack from "react-bootstrap/Stack";
 import Button from "react-bootstrap/Button";
 
-/* Start function for inlogForm */
+/* Funktion för inlog, antingen logga in eller nekad inloggning */
 export function Inlog({ Login, error }) {
+
+  /* tom lista. Tomma listan matas på med hjälp av useState */
   const [details, setDetails] = useState({
     name: "",
     userID: "",
@@ -27,21 +29,27 @@ export function Inlog({ Login, error }) {
 
     Login(details);
   };
+
   return (
     <div>
+      {/* Rubrik */}
       <h1 className="startHeader">Lär för framtiden</h1>
+      {/* Logga */}
       <FontAwesomeIcon
         icon={faGlobeEurope}
         className="startLogga"
       ></FontAwesomeIcon>
-
+      {/* Error text, texten dyker upp vid felaktiga inloggningsuppgifter */}
       {error !== "" ? <div className="error">{error}</div> : ""}
 
       <div className="loginForm mb-3">
         <Stack gap={2} className="col-7 mx-auto">
           <Form onSubmit={submitHandler}>
+
+            {/* ID input form */}
             <Form.Group className="mb-2" controlId="formGroupEmail">
               <Form.Label>Id:</Form.Label>
+              {/* Placerar inskriven data i tomma listan./sparar data */}
               <Form.Control
                 type="name"
                 onChange={(e) =>
@@ -52,8 +60,10 @@ export function Inlog({ Login, error }) {
               />
             </Form.Group>
 
+            {/* Lösenord input form */}
             <Form.Group className="mb-3" controlId="formGroupPassword">
               <Form.Label>Lösenord:</Form.Label>
+              {/* Placerar inskriven data i tomma listan./sparar data */}
               <Form.Control
                 type="password"
                 onChange={(e) =>
@@ -64,7 +74,7 @@ export function Inlog({ Login, error }) {
               />
             </Form.Group>
 
-            {/* Start button */}
+            {/* Logga in knapp */}
             <div className="centerButton">
               <Button className="startButton mb-5" type="submit">
                 Starta
@@ -74,9 +84,11 @@ export function Inlog({ Login, error }) {
         </Stack>
       </div>
 
+      {/* Info om vår grupp */}
       <div className="group3">
         <h2 className="h2Start">En app av Grupp 3</h2>
         <div className="groupNames3">
+          {/* Gruppmedlemmarna */}
           <p>
             Linda Nyberg Andersson <br></br>
             Christian Areschoug <br></br>
@@ -89,5 +101,5 @@ export function Inlog({ Login, error }) {
     </div>
   );
 }
-
+/* Exportera komponent */
 export default Inlog;

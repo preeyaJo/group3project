@@ -1,12 +1,23 @@
+/* Importerar react */
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import "../Style/App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Importerar data */
 import { UserScoreContext } from "../App";
 import questionsArray from "../Quiz/questions.json";
+
+/* Importerar komponenter */
 import GlobalHeader from "../Components/GlobalHeader";
 import BottomMenu from "../Components/BottomMenu";
+
+/* Importerar style */
+import "../Style/App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Importerar Bootstrap */
+import Button from "react-bootstrap/Button";
+
+
 
 export function HighScore() {
   // lagrar antal rätta svar samt inlogning lagrad från Quiz och Start.

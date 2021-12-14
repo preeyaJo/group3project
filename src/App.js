@@ -1,7 +1,13 @@
+/* Importera react */
 import React, { useState } from "react";
+/* Importera rect router dom */
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+/* Importera style/CSS */
 import "./Style/App.css";
 import "./Style/quiz.css";
+
+/* Importera komponenter */
 import Start from "./Views/Start";
 import FutureClimate from "./Views/FutureClimate";
 import QuizLobby from "./Views/QuizLobby";
@@ -13,7 +19,6 @@ import SeaLevels from "./Views/SeaLevels";
 import GlacierSize from "./Views/GlacierSize";
 import Info from "./Views/Info";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // skapar scorecontext som en global variable
 export const UserScoreContext = React.createContext(0);
@@ -32,13 +37,13 @@ function App() {
         <Router>
           <div>
             <Switch>
+              {/* Byter view beroende på path med hjälp av Router, Switch och Route */}
               <UserScoreContext.Provider
                 value={{ scoreContext, setScoreContext }}
               >
                 <Route path="/" exact component={Start} />
                 <Route path="/highscore" component={HighScore} />
                 <Route path="/quiz" component={Quiz} />
-
                 <Route path="/futureclimate" component={FutureClimate} />
                 <Route path="/fossilfuels" component={FossilFuels} />
                 <Route path="/globalwarming" component={GlobalWarming} />
