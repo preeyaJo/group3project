@@ -166,6 +166,7 @@ p{
 /*Style på felmeddelande*/
 .errorMassage{
   color: black;
+  text-align: center !important;
 }
 
 /*Style på start-knapp*/
