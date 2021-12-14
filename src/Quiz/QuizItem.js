@@ -8,7 +8,7 @@ import { UserScoreContext } from "../App";
 function QuizList() {
   // sparar möjligheten att ändra "state scoreContext"
   // varje gång vi klickar på ett svar uppdateras även scoreContext med det nya värdet i handleButtonClick().
-  const { setScoreContext } = React.useContext(UserScoreContext);
+  const { scoreContext, setScoreContext } = React.useContext(UserScoreContext);
 
   const nrOfQuestions = questionsArray.length; // sparar antalet antal frågor i vår array.
   const [currentQuestion, setCurrentQuestion] = useState(0); //räknare som bestämmer vilken fråga som visas i questions-array
@@ -35,7 +35,7 @@ function QuizList() {
       setScore(newscore);
 
       // Skickar score det till den state som sparar userScoreContext
-      setScoreContext(newscore);
+      setScoreContext({ score: newscore, namn: scoreContext.namn });
     } // inget else eftersom vi alltid vill att nästa(nedan) bit kod körs
 
     // räknar upp +1 onClick

@@ -9,19 +9,19 @@ import GlobalHeader from "../Components/GlobalHeader";
 import BottomMenu from "../Components/BottomMenu";
 
 export function HighScore() {
-  // lagrar antal rätta svar från Quiz.
+  // lagrar antal rätta svar samt inlogning lagrad från Quiz och Start.
   const { scoreContext } = React.useContext(UserScoreContext);
 
-  // Lagrar highscore i simulering av server. -------------> TODO: Flytta till egen fil och använd fetch().
+  // Lagrar highscore i simulering av server.
   const highScoreList = [
     { name: "Shara, N.", result: 10 },
     { name: "Alexandra, L.", result: 7 },
     { name: "David, G.", result: 8 },
     { name: "Jafar, A.", result: 9 },
-    { name: "Anna, E.", result: scoreContext },
+    { name: scoreContext.namn, result: scoreContext.score },
   ];
 
-  // Retunerar alla resultat som INTE är 0 vilket filtrerar bort användare som inte genomfört quiz ännu.
+  // Retunerar alla resultat som INTE är 0 för att filtrer bort användare som inte genomfört quiz ännu.
   const filteredList = highScoreList.filter((listItems) => {
     return listItems.result !== 0;
   });
