@@ -19,13 +19,16 @@ import SeaLevels from "./Views/SeaLevels";
 import GlacierSize from "./Views/GlacierSize";
 import Info from "./Views/Info";
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
+
 
 // skapar scorecontext som en global variable
 export const UserScoreContext = React.createContext(0);
 
 function App() {
-  // State för att dela en const mellan quiz och high-score
-  // UserScoreContext.Provider nedan delar scoreContext med de routes som wrappas. Alla underliggane komponenter har tillgång.
+  // State för att dela en const mellan quiz och high-score // CHristian
+  // UserScoreContext.Provider nedan delar scoreContext med de routes som wrappas. Alla underliggane komponenter har tillgång till context. // CHristian
   const [scoreContext, setScoreContext] = useState({
     score: 0,
     namn: "Unknown User",
@@ -35,6 +38,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Router>
+          <ScrollToTop />
           <div>
             <Switch>
               {/* Byter view beroende på path med hjälp av Router, Switch och Route */}
