@@ -19,9 +19,7 @@ import SeaLevels from "./Views/SeaLevels";
 import GlacierSize from "./Views/GlacierSize";
 import Info from "./Views/Info";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollToTop";
-
 
 // skapar scorecontext som en global variable
 export const UserScoreContext = React.createContext(0);
