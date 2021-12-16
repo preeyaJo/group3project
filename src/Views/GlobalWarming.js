@@ -32,8 +32,9 @@ export function GlobalWarming() {
           Mean.data.push(year["Mean"]);
         });
 
-        /*Vänder på årtalen*/
+        /*Vänder på årtalen och datan*/
         labels.reverse();
+        Mean.data.reverse();
 
         /*Lagrar datan för alla labels och datasets/ämnen*/
         setData({
