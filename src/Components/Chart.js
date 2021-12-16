@@ -11,13 +11,9 @@ const ChartHeadingarray = [
     },
     {
         category: "globaltemperature",
-<<<<<<< Updated upstream
-        heading: "Skillnad på den globala temperaturen i grader celsius mellan 2016-1956"
-=======
         heading: "Skillnad på den globala temperaturen i grader celsius mellan 1990-2016",
         info: "Diagrammet visar hur den globala medeltemperaturen har ökat per år"
         
->>>>>>> Stashed changes
       },
       {
         category: "sealevels",
@@ -50,25 +46,15 @@ export function Chart(props) {
 
     return (
         <div className="card p-3">
-<<<<<<< Updated upstream
-            <h3>{data.heading}</h3>
-            {/*Chartsens storlek blir 100% av dess innehållsblock*/}
-            <canvas id="chart" style={{width:'100%', height:'100%'}}></canvas>
-=======
             {/*Hämtar data för headings*/}
             <h3>{data.heading}</h3>           
             {/*Ändrar chartsens storlek*/}
             <canvas id="chart"  style={{width:'400px', height:'200px'}}></canvas>
              {/*Hämtar data för info*/}
             <p>{data.info}</p>
->>>>>>> Stashed changes
         </div>
     );
   }
 
-<<<<<<< Updated upstream
-export default Chart;
-=======
 /*Exporterar*/
 export default Chart;
->>>>>>> Stashed changes
