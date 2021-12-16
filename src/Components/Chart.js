@@ -57,12 +57,12 @@ export function Chart(props) {
             {/*Hämtar data för headings*/}
             <h3>{data.heading}</h3>           
             {/*Ändrar chartsens storlek*/}
-            <canvas id="chart" width="400" height="400"></canvas>
+            <canvas id="chart"  style={{width:'400px', height:'200px'}}></canvas>
              {/*Hämtar data för info*/}
             <p>{data.info}</p>
         </div>
     );
   }
 
-  /*Exporterar*/
+/*Exporterar*/
 export default Chart;
