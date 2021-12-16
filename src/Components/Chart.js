@@ -15,7 +15,7 @@ const ChartHeadingarray = [
     },
     {
         category: "globaltemperature",
-        heading: "Skillnad på den globala temperaturen i grader celsius mellan 2016-2000",
+        heading: "Skillnad på den globala temperaturen i grader celsius mellan 1990-2016",
         info: "Diagrammet visar hur den globala medeltemperaturen har ökat per år"
         
       },

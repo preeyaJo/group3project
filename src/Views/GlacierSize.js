@@ -20,7 +20,7 @@ export function GlacierSize() {
         /*Filtrering av årtal så det begränsas*/
         res = res.filter((x) => x.Year > 1990);
         let Meancumulativemassbalance = {
-          label: "Medelmassa av uppmätt glaciärer",
+          label: "Medelmassa av uppmätta glaciärer",
           data: [],
           backgroundColor: "#ABD4A4",
         };
