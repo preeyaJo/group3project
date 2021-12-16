@@ -17,8 +17,9 @@ export function SeaLevels() {
     fetch("data/SeaLevel.json")
       .then((response) => response.json())
       .then((res) => {
+        console.log (res)
         /*Filtrering av årtal så det begränsas*/
-        res = res.filter((x) => x.Time > "1950-03-15");
+        res = res.filter((x) => x.Time > "1990");
         let GMSL = { 
           label: " Rekonstruerad global medelhavsnivå - GMSL", 
           data: [], 
@@ -49,12 +50,11 @@ export function SeaLevels() {
     <div>
       {/*Toppmeny*/}
       <GlobalHeader />
-    <div className="container extraSpacing">
-      
+    <div className="container extraSpacing">  
       <InfoCard Category="sealevels"/>
       {/*Skriver ut vilken typ av charts som ska visas*/}
-      <Chart Category="sealevels" type="bar" data={data} />
-      
+      <Chart Category="sealevels" type="bar" data={data} /> 
+
     </div>
     {/*Bottenmeny*/}
     <BottomMenu />

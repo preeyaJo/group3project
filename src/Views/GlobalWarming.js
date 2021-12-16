@@ -18,16 +18,17 @@ export function GlobalWarming() {
       .then((response) => response.json())
       .then((res) => {
         /*Filtrering av årtal så det begränsas*/
-        res = res.filter((x) => x.Year > 1950);
-        let Mean = { 
-          label: "Global medeltemperatur", 
-          data: [], 
-          backgroundColor: "#997FB2" };
+        res = res.filter((x) => x.Year > "2000");
+        let Mean = {
+          label: "Global medeltemperatur",
+          data: [],
+          backgroundColor: "#997FB2",
+        };
 
         let labels = [];
         /*Pushar ut data för varje ämne och årtal*/
         res.forEach((year) => {
-          labels.push(year.Year + "" + year["Source"]);
+          labels.push(year.Year);
           Mean.data.push(year["Mean"]);
         });
          /*Lagrar datan för alla labels och datasets/ämnen*/

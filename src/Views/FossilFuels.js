@@ -18,7 +18,7 @@ export function FossilFuels() {
       .then((response) => response.json())
       .then((res) => {
        /*Filtrering av årtal så det begränsas*/
-        res = res.filter((x) => x.Year > 1950);
+        res = res.filter((x) => x.Year > 1990);
         let gasFlaring = {
           label: "Gasledning",
           data: [],
@@ -67,12 +67,11 @@ export function FossilFuels() {
     <div>
       {/*Toppmeny*/}
     <GlobalHeader />
-    <div className="container extraSpacing">
-      
+      <div className="container extraSpacing">
       <InfoCard Category="fossilfuels"/>
        {/*Skriver ut vilken typ av charts som ska visas*/}
       <Chart Category="fossilfuels" type="line" data={data} />
-    </div>
+      </div>
     {/*Bottenmeny*/}
     <BottomMenu />
     </div>

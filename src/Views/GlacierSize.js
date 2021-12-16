@@ -18,7 +18,7 @@ export function GlacierSize() {
       .then((response) => response.json())
       .then((res) => {
         /*Filtrering av årtal så det begränsas*/
-        res = res.filter((x) => x.Year > 1950);
+        res = res.filter((x) => x.Year > 1990);
         let Meancumulativemassbalance = {
           label: "Medelmassa av uppmätt glaciärer",
           data: [],
