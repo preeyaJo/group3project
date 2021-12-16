@@ -1,3 +1,6 @@
+
+/***** Generell CSS/style *****/
+
 /*Centrerar all text i applikationen*/
 .App {
   text-align: center;
@@ -30,6 +33,29 @@ p{
   font-family: 'ABeeZee', sans-serif;
 }
 
+/* En lila ram på några olika views */
+.borderPruple{ 
+  border: 2px solid #716595 !important;
+  border-radius: 5px !important;
+}
+
+.quizFix{
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+/*Extra spacing mellan content, global header och bottom meny*/
+.extraSpacing{
+  margin-top: 5em;
+  margin-bottom: 6em;
+}
+
+
+
+
+
+/***** Global header komponent *****/
+
 /*Style på globala header på alla views*/
 .GlobalHeader{
   background-color: #184e77;
@@ -43,6 +69,21 @@ p{
   font-family: 'ABeeZee', sans-serif;
 }
 
+/*Ikonerna i global header*/
+.TopNavItem {
+  color: #ffffff;
+}
+
+.TopNavItem:hover {
+  color: #e1e6dd;
+}
+
+
+
+
+
+/***** Bottom meny komponent *****/
+
 /*Style på bottenmenyn på alla views*/
 .BottomMenu {
   background-color: #184e77;
@@ -55,14 +96,8 @@ p{
   .BottomMenu {
     height: 90px !important;
   }
-
 }
-/*Extra margin*/
-.extraSpacing{
-  margin-top: 5em;
-  margin-bottom: 6em;
 
-}
 /* Sätt till samma höjd som bottenmenyn i de andra Vy's */
 .FutureBottom {
   height: 72px;
@@ -70,11 +105,6 @@ p{
 
 /*Ikonerna i bottenmenyn*/
 .BottomNavItem {
-  color: #ffffff;
-}
-
-/*Ikonerna i global header*/
-.TopNavItem {
   color: #ffffff;
 }
 
@@ -87,10 +117,6 @@ p{
   padding-right: 5px !important ;
 }
 
-/*Gör responsiv*/
-@media only screen and (min-width: 700px) {
-}
-
 /*Storlek på hem-ikonen*/
 .bottommenu-house {
   font-size: 1.3em;
@@ -98,9 +124,6 @@ p{
 
 /*Hover i responsivt läge*/
 .BottomNavItem:hover {
-  color: #e1e6dd;
-}
-.TopNavItem:hover {
   color: #e1e6dd;
 }
 
@@ -113,6 +136,12 @@ p{
   border: 1.5px solid #e1e6dd;
   color: #e1e6dd;
 }
+
+
+
+
+
+/***** Start komponent *****/
 
 /*Style på start*/
 .startHeader {
@@ -137,6 +166,7 @@ p{
 /*Style på felmeddelande*/
 .errorMassage{
   color: black;
+  text-align: center !important;
 }
 
 /*Style på start-knapp*/
@@ -147,8 +177,6 @@ p{
   border: #5a5077 !important;
   padding-left: 2em !important;
   padding-right: 2em !important;
-  font-family: 'ABeeZee', sans-serif;
-  
 }
 
 /*Centrerar knapp*/
@@ -164,7 +192,7 @@ p{
   font-size: 20px !important;
 }
 
-
+/*Style på grupp presentation*/
 .group3 p {
   color: #707070 !important;
   text-align: center !important;
@@ -176,7 +204,11 @@ p{
 }
 
 
-/* Info view */
+
+
+
+/***** Info view *****/
+
 .infoText{
   color: black;
   text-align: left;
@@ -188,14 +220,4 @@ p{
   text-align: center;
   padding: 1em;
   margin-top: 3em;
-}
-
-.borderPruple{
-  border: 2px solid #716595 !important;
-  border-radius: 5px !important;
-}
-
-.quizFix{
-  margin-top: 5em;
-  margin-bottom: 5em;
 }

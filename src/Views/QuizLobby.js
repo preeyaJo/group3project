@@ -1,6 +1,6 @@
 import React from "react";
 import "../Style/App.css";
-import "../Quiz/quiz.css";
+import "../Style/quiz.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import BottomMenu from "../Components/BottomMenu";
 
