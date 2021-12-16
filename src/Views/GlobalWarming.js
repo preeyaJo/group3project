@@ -18,7 +18,7 @@ export function GlobalWarming() {
       .then((response) => response.json())
       .then((res) => {
         /*Filtrering av årtal så det begränsas*/
-        res = res.filter((x) => x.Year > 1950);
+        res = res.filter((x) => x.Year > 1990);
         let Mean = {
           label: "Global medeltemperatur",
           data: [],
@@ -31,6 +31,10 @@ export function GlobalWarming() {
           labels.push(year.Year + "" + year["Source"]);
           Mean.data.push(year["Mean"]);
         });
+
+        /*Vänder på årtalen*/
+        labels.reverse();
+
         /*Lagrar datan för alla labels och datasets/ämnen*/
         setData({
           labels: labels,

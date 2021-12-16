@@ -33,7 +33,7 @@ export function SeaLevels() {
         let labels = [];
         /*Pushar ut data för varje ämne och tid*/
         res.forEach((time) => {
-          labels.push(time.Time);
+          labels.push(time.Time.split('-')[0]);
           GMSL.data.push(time["GMSL"]);
           GMSLuncertainty.data.push(time["GMSL uncertainty"]);
         });
