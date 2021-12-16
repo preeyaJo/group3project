@@ -27,7 +27,7 @@ const ChartHeadingarray = [
       {
         category: "glaciersize",
         heading: "Skillnaden mellan glaciärers storlek från 1990-2015",
-        info: "Diagrammet visar hur glaciärers medelmassa har ökat per år och hur många glaciärer som har observerats"
+        info: "Diagrammet visar hur glaciärers medelmassa har minskat per år och hur många glaciärer som har observerats"
       },
   ];
 
