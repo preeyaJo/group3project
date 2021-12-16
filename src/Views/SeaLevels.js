@@ -17,7 +17,6 @@ export function SeaLevels() {
     fetch("data/SeaLevel.json")
       .then((response) => response.json())
       .then((res) => {
-        console.log (res)
         /*Filtrering av årtal så det begränsas*/
         res = res.filter((x) => x.Time > "1990");
         let GMSL = { 
