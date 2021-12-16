@@ -54,7 +54,6 @@ export function SeaLevels() {
       <InfoCard Category="sealevels"/>
       {/*Skriver ut vilken typ av charts som ska visas*/}
       <Chart Category="sealevels" type="bar" data={data} /> 
-
     </div>
     {/*Bottenmeny*/}
     <BottomMenu />
