@@ -83,7 +83,7 @@ function QuizList() {
         <div className="QuizItem rounded text-secondary p-4">
           <img
             src={questionsArray[currentQuestion].quizImage}
-            alt="A pointy tower"
+            alt={questionsArray[currentQuestion].quizImageAlt}
             className=" my-3 quizImage"
           />
           <h2>

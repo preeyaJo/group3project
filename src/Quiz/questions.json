@@ -2,6 +2,7 @@
   {
     "questionText": "Vad bidrar mest till ozonlagrets förstörelse?",
     "quizImage": "https://images.unsplash.com/photo-1588011930968-eadac80e6a5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80",
+    "quizImageAlt": "Industrial area at night",
     "answerOptions": [
       { "answerText": "Elbilar", "isCorrect": false },
       { "answerText": "Vatten", "isCorrect": false },
@@ -11,6 +12,7 @@
   {
     "questionText": "Vad är ozonlagret bra för?",
     "quizImage": "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    "quizImageAlt": "Industrial area at morning with fossil fuels coming from the area",
     "answerOptions": [
       {
         "answerText": "Skyddar mot solens skadliga strålar",
@@ -23,6 +25,7 @@
   {
     "questionText": "Hur många grader har den globala temperaturen ökat?",
     "quizImage": "https://images.unsplash.com/photo-1610557013547-dc7a52d44709?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80",
+    "quizImageAlt": "Dried tree in open area",
     "answerOptions": [
       { "answerText": "1-2 grader", "isCorrect": true },
       { "answerText": "5-6 grader", "isCorrect": false },
@@ -32,6 +35,7 @@
   {
     "questionText": "Vad är den ökade temperaturens konsekvenser?",
     "quizImage": "https://images.unsplash.com/photo-1516537219851-920e2670c6e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80",
+    "quizImageAlt": "Volcano erupning",
     "answerOptions": [
       {
         "answerText": "Värmeböljor blir mer vanligt i mellanöstern",
@@ -47,6 +51,7 @@
   {
     "questionText": " Hur kan du minska din påverkan på den globala temperaturen?",
     "quizImage": "https://images.unsplash.com/photo-1488134684157-fea2d81a5ec4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80",
+    "quizImageAlt": "City with cars in four lanes",
     "answerOptions": [
       { "answerText": "Äta mer kött", "isCorrect": false },
       { "answerText": "Handla mer kläder", "isCorrect": false },
@@ -56,6 +61,7 @@
   {
     "questionText": "Ökar eller minskar havsnivån?",
     "quizImage": "https://images.unsplash.com/photo-1439405326854-014607f694d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    "quizImageAlt": "Open ocean",
     "answerOptions": [
       { "answerText": "Den ökar", "isCorrect": true },
       { "answerText": "Den minskar", "isCorrect": false }
@@ -64,6 +70,7 @@
   {
     "questionText": "Vad leder den ökade havsnivån till?",
     "quizImage": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+    "quizImageAlt": "Coral reef with fish",
     "answerOptions": [
       {
         "answerText": "Förstörda städer som sakta sjunker under havsnivån",
@@ -76,6 +83,7 @@
   {
     "questionText": "Varför höjs havsnivån?",
     "quizImage": "https://images.unsplash.com/photo-1576637222197-0b3b94404f34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1881&q=80",
+    "quizImageAlt": "Glacier in cold ocean",
     "answerOptions": [
       { "answerText": "Det regnar mer", "isCorrect": false },
       { "answerText": "Glaciärerna smälte", "isCorrect": true }
@@ -84,6 +92,7 @@
   {
     "questionText": "Varför är stormar och orkaner farliga?",
     "quizImage": "https://images.unsplash.com/photo-1516490981167-dc990a242afe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    "quizImageAlt": "Storm with lightning",
     "answerOptions": [
       { "answerText": "Ekosystemet rubbas", "isCorrect": false },
       { "answerText": "Kan förstöra hus och natur", "isCorrect": true }
@@ -92,6 +101,7 @@
   {
     "questionText": "Vad händer när glaciärerna har smält?",
     "quizImage": "https://images.unsplash.com/photo-1447655513720-7da85ed1fa57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    "quizImageAlt": "Dried ocean with boat on land",
     "answerOptions": [
       {
         "answerText": "Hav överallt utan tillgång till land",

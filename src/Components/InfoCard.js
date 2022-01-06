@@ -7,6 +7,7 @@ import "../Style/infocard.css";
 const infoCardArray = [
     {
       category: "fossilfuels",
+      alt:"Industrial area with fossil fuels in the air",
       heading: "Fossila bränslens påverkan på ozonlagret",
       info1:
         "Fossila bränslen är olika gaser som sprids i vår atmosfär på grund av människans användning av exempelvis bensin, diesel och kol. Dessa gaser är en stor orsak till klimatförändring då de minskar jordens ozonlager.",
@@ -19,6 +20,7 @@ const infoCardArray = [
     },
     {
       category: "globaltemperature",
+      alt:"Forrest fire",
       heading: "Konsekvenser av den globala uppvärmningen",
       info1:
         "På grund av människans enorma utsläpp av gaser (exempelvis fossila bränslen) höjs den globala temperaturen. Den globala medeltemperaturen har just nu ökat med 1-2 grader, vilket egentligen inte låter så mycket. Men detta skapar katastrofer i vår värld. ",
@@ -31,6 +33,7 @@ const infoCardArray = [
     },
     {
       category: "sealevels",
+      alt:"Ocean wave",
       heading: "Konsekvenser av ökande havsnivåer",
       info1:
         "På grund av den smältande isen höjs jordens vatten. Glaciärerna blir till vatten, som sedan förs vidare ut till jordens hav. Detta leder till förstörda städer som sakta sjunker under havsnivån. ",
@@ -43,6 +46,7 @@ const infoCardArray = [
     },
     {
       category: "glaciersize",
+      alt:"Big glacier in ocean",
       heading: "Konsekvenser av smältande glaciärer",
       info1:
         "Jordens polarområden förlorar glaciärer och is. Polarområdenas vatten förändras snabbt genom varmare temperaturer och döende vattendjur. Detta påverkar oss redan idag, men i framtiden kommer det bli värre. ",
@@ -65,7 +69,7 @@ const infoCardArray = [
   /*InfoCard*/
   <div className="">
         <div className="col infocard">
-          <img className="card-img-top" src={data.image} alt=""/> {/*Bild till InfoCard*/}
+          <img className="card-img-top" src={data.image} alt={data.alt}/> {/*Bild till InfoCard*/}
         </div>
         <div className="col">
           <div className="card-body">
